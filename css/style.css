@@ -16,6 +16,23 @@
     color: #6C757D;
 }
 
+.estiloBoton{
+    color: #4F46E5;
+    outline-color: #4F46E5;
+}
+
+.hBtn:hover{
+    background-color: #4F46E5;
+    color: white;
+}
+
+.estiloInputs{
+    border-color: #4F46E5;
+    border-style: solid;
+    border-width: .4px;
+    width: 35%;
+}
+
 .textoInputs {
     font-style: normal;
     font-weight: 500;
@@ -23,7 +40,6 @@
     line-height: 20px;
     text-align: center;
     color: #818CF8;
-    
 }
 
 .line {
