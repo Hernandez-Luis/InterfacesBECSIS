@@ -1,3 +1,13 @@
 .fontPoppins {
     color: aqua;
 }
+
+/*----------------Footer------------------------*/
+.redesSociales{
+    width: 25%;
+    height: auto;
+}
+footer{
+    font-family: 'Poppins';
+    color: #818CF8;
+}
