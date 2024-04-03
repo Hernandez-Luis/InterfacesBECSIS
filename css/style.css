@@ -1,6 +1,35 @@
 .fontPoppins {
-    color: aqua;
+    font-family: 'Poppins';
 }
+
+.titulo{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4F46E5;
+}
+
+.subtitulo {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #6C757D;
+}
+
+.textoInputs {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #818CF8;
+    
+}
+
+.line {
+    width: 14%;
+    border-bottom: 2px solid #6366F1;
+  }
 
 /*----------------Footer------------------------*/
 .redesSociales{
