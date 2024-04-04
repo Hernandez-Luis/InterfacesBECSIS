@@ -44,8 +44,8 @@
 
 .line {
     width: 14%;
-    border-bottom: 2px solid #6366F1;
-}
+    border-bottom: 2px solid #6366F1;}
+
 
 .colorFondo{
     background-color: #F8F9FA;
@@ -93,3 +93,43 @@
 .apartadosBtn:active {
     background-color: #b81d1d;
 }
+
+/*----------------Footer------------------------*/
+
+footer{
+    font-family: 'Poppins';
+    margin-top: 3em;
+    color: #818CF8;
+}
+
+footer hr {
+    height: 2px; /* Altura del HR */
+    background-color: #A5B4FC; /* Color del HR */
+    margin: 20px 0; /* Espacio alrededor del HR */
+}
+
+.tituloFooter{
+    font-style: normal;
+    font-weight: 600;
+
+    line-height: 18px;
+}
+.textoFooter{
+    color: #6C757D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+.suneoFooter{
+    width: 50%;
+    height: auto;
+}
+.unsijFooter{
+    width: 20%;
+    height: auto;
+}
+
+/*----------------Footer------------------------*/
