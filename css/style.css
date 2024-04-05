@@ -132,3 +132,33 @@ footer hr {
 }
 
 /*----------------Footer------------------------*/
+
+
+/*----------------Nav------------------------*/
+.navbar {
+    margin-top: 20px;
+    margin-left: 20px; /* Margen a la izquierda */
+    margin-right: 20px; /* Margen a la derecha */
+    font-size: 20px;
+    border-radius: 2%;
+}
+.navbar-nav .nav-link {
+    color: #6366F1; /* Color de las letras */
+
+}
+/*Botones de Menu Alumnos*/
+.btn {
+    font-size: 1.55rem; /* Tamaño de fuente más grande */
+    padding: 0.75rem 1.5rem; /* Aumentar el relleno */
+    width: 250%;
+    color: black;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+}
+
+/* Cambiar el color al pasar el cursor */
+.btn:hover {
+    background-color: #4F46E5;
+    color: white;
+    border-color: #4F46E5;
+}
