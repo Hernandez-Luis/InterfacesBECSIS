@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>BECSIS</title>
 </head>
-<body >
+<body>
     <section>
         <div class="container text-center">
             <div class="row">
                 <div class="col d-flex justify-content-center align-items-center mt-5" style=" height: 600px;">
-                    <img src="../img/login.png" style="width: 64%; height: 50%;" alt="">
+                    <img src="../img/imagenLogin.png" style="width: 64%; height: 50%;" alt="">
                 </div>
     
                 <div class="col" style="height: 600; margin-top: 120px;">
@@ -39,8 +39,8 @@
                         <input type="checkbox" class="form-check-input" id="mostrarContraseñaLogin">
                         <label for="form-check-label" class="subtitulo" form="show-password">Mostrar contraseña</label>
                     </div>
-                    <div>
-                        <button class="btn btn-outline-primary hBtn mt-3  estiloBoton">Guardar</button>
+                    <div class="justify-items-center">
+                        <button class="btn btn-outline-primary hBtn mt-3 estiloBoton">Guardar</button>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,17 @@
     
     </section>
     <footer>
-
+        <div id="footer"></div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const footerContainer = document.getElementById('footer');
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(html => {
+                    footerContainer.innerHTML = html;
+                });
+        });
+    </script>
 </body>
 </html>
