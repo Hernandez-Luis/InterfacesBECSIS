@@ -86,8 +86,23 @@
     text-decoration:none;
 }
 
- .how-section1 p{
+.how-section1 p{
     color: #a2a3fb;
-    font-size: 16px; text-align: justify;
+    font-size: 14px; text-align: justify;
     font-family: sans-serif;
+    width: 140%;
+}
+.how-section1 .row{
+    margin-top: 5%;
+}
+.how-section1 {
+    width: 100%;
+}
+.how-img img{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.how-img {
+    text-align:right;
 }
