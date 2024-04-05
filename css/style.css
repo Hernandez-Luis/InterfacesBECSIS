@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .fontPoppins {
     font-family: 'Poppins';
 }
@@ -12,7 +16,6 @@
 .subtitulo {
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
     color: #6C757D;
 }
 
@@ -31,6 +34,7 @@
     border-style: solid;
     border-width: .4px;
     width: 35%;
+    color: #6C757D;
 }
 
 .textoInputs {
@@ -43,7 +47,8 @@
 
 .line {
     width: 14%;
-    border-bottom: 2px solid #6366F1;}
+    border-bottom: 2px solid #6366F1;
+}
 
 
 .colorFondo{
@@ -91,6 +96,10 @@
 
 .apartadosBtn:active {
     background-color: #b81d1d;
+}
+
+.colorFondoAgregar{
+    background-color: #BFBFBF;
 }
 
 /*----------------Footer------------------------*/
