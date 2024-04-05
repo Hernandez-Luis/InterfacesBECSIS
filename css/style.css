@@ -79,6 +79,42 @@ body {
     border-radius: 53px;
     background-color: #4F46E5;
 }
+
+.cuadro {
+    border: 1px solid #ccc;
+    padding: 5px; /* Reduciendo el padding */
+    margin-bottom: 5px; /* Reduciendo el margin-bottom */
+    border-radius: 7px; /* Reduciendo el border-radius */
+    background-color: #F5F5F5;
+    width: 15cm;
+    height: 14cm;
+    margin-left: 1.7cm;
+}
+
+
+.titulo-cuadro {
+    font-weight: 50px;
+    font-size: 20px;
+    line-height: 60px;
+    color: #4F46E5;
+    margin-left:1cm;
+}
+.campo label {
+    display: flex;
+    margin-bottom: 5px;
+    color: #818CF8;
+    margin-left: 1cm;
+}
+
+.campo input,
+.campo select {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #6366F1;
+    border-radius: 7px;
+    margin-left: 1cm;
+}
+
 .divApartados{
     margin-top: 1.8cm; margin-left: 3.6cm; 
     margin-bottom: 1cm;
