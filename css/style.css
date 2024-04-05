@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .fontPoppins {
     font-family: 'Poppins';
 }
@@ -12,7 +16,6 @@
 .subtitulo {
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
     color: #6C757D;
 }
 
@@ -31,6 +34,7 @@
     border-style: solid;
     border-width: .4px;
     width: 35%;
+    color: #6C757D;
 }
 
 .textoInputs {
@@ -38,7 +42,6 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    text-align: center;
     color: #818CF8;
 }
 
@@ -47,8 +50,9 @@
     border-bottom: 2px solid #6366F1;
 }
 
+
 .colorFondo{
-    background-color: #F8F9FA;
+    background-color: #F5F5F5;
 }
 
 .localizacion{
@@ -106,3 +110,47 @@
 .how-img {
     text-align:right;
 }
+
+.colorFondoAgregar{
+    background-color: #BFBFBF;
+}
+
+/*----------------Footer------------------------*/
+
+footer{
+    font-family: 'Poppins';
+    margin-top: 3em;
+    color: #818CF8;
+}
+
+footer hr {
+    height: 2px; /* Altura del HR */
+    background-color: #A5B4FC; /* Color del HR */
+    margin: 20px 0; /* Espacio alrededor del HR */
+}
+
+.tituloFooter{
+    font-style: normal;
+    font-weight: 600;
+
+    line-height: 18px;
+}
+.textoFooter{
+    color: #6C757D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+.suneoFooter{
+    width: 50%;
+    height: auto;
+}
+.unsijFooter{
+    width: 20%;
+    height: auto;
+}
+
+/*----------------Footer------------------------*/
