@@ -21,8 +21,8 @@
                         Nombre Completo</label>
                     <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el nombre completo del alumno">
                 </div>
-                <div class="col-12">
-                    <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Carrera</label>
+                <div class="col-12 ">
+                    <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;padding-top: 3%;">Carrera</label>
                     <select class="form-select" aria-label="Default select example">
                         <option value="1">Ingeniería Forestal</option>
                         <option value="2">Licenciatura en Ciencias Ambientales</option>
@@ -31,8 +31,8 @@
                         <option value="3">Licenciatra en Administración Turistica</option>
                     </select>
                 </div>
-                <div class="col-4">
-                    <label for="inputSeleccion" class="form-label text-end" style="color: #6366F1;">Semestre</label>
+                <div class="col-12">
+                    <label for="inputSeleccion" class="form-label text-end" style="color: #6366F1;padding-top: 3%;">Semestre</label>
                     <select class="form-select" aria-label="Default select example">
                         <option value="1">Primero</option>
                         <option value="2">Segundo</option>
@@ -45,8 +45,8 @@
                         <option value="3">Decimo</option>
                     </select>
                 </div>
-                <div class="col-md-9">
-                    <label for="inputCity" class="form-label text-end" style="color: #6366F1;">Estado Civil</label>
+                <div class="col-md-12">
+                    <label for="inputCity" class="form-label text-end" style="color: #6366F1; padding-top: 3%;">Estado Civil</label>
                     <div style="display: flex; justify-content: space-between;">
                         <div style="width: 48%;">
                             <div class="form-check">
@@ -63,7 +63,24 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <label for="inputCity" class="form-label text-start" style="color: #6366F1;">¿Tienes los recursos económicos necesarios para tus actividades académicas?</label>
+                    <label for="inputCity" class="form-label text-start" style="color: #6366F1; padding-top: 3%;">¿Tienes los recursos económicos necesarios para tus actividades académicas?</label>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 48%;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">Si</label>
+                            </div>
+                        </div>
+                        <div style="width: 48%;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputCity" class="form-label text-start" style="color: #6366F1; padding-top: 3%;">¿Solicitas beca alimentaria</label>
                     <div style="display: flex; justify-content: space-between;">
                         <div style="width: 48%;">
                             <div class="form-check">
@@ -81,8 +98,8 @@
                 </div>
             </form>
         </div>
-    </div>
-    <div class="col rounded colorFondo m-2 p-3">
+    
+        <div class="col rounded colorFondo m-2 p-3">
         <h3 style="color: #6366F1;">Domicilio</h3>
         <div class="col-md-12" style="color: #6366F1;">
                 <p>Marque la opción que mejor describa tu situación de vivienda:</p>
@@ -109,7 +126,7 @@
                     </div>
                 </div>
         </div> 
-        <div class="col-md-12" style="color: #6366F1;">
+        <div class="col-md-12" style="color: #6366F1; padding-top: 2%;">
                 <p>Marque la opción que mejor describa tu situación de vivienda:</p>
         </div>
         <div class="col-md-12">
@@ -118,11 +135,11 @@
                         <div class="col-12">
                             <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Estado</label>
                             <select class="form-select" aria-label="Default select example">
-                                <option value="1">Ingeniería Forestal</option>
-                                <option value="2">Licenciatura en Ciencias Ambientales</option>
-                                <option value="3">Ingeniería de Desarrollo de Software y Sistemas Inteligentes</option>
-                                <option value="3">Licenciatura en Biología</option>
-                                <option value="3">Licenciatra en Administración Turistica</option>
+                                <option value="1">Oaxaca</option>
+                                <option value="2">Puebla</option>
+                                <option value="3">Chiapas</option>
+                                <option value="3">Veracruz</option>
+                                <option value="3">Durango</option>
                             </select>
                         </div>
                     </div>
@@ -130,16 +147,88 @@
                         <div class="form-check">
                             <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Municipio</label>
                             <select class="form-select" aria-label="Default select example">
-                                <option value="1">Ingeniería Forestal</option>
-                                <option value="2">Licenciatura en Ciencias Ambientales</option>
-                                <option value="3">Ingeniería de Desarrollo de Software y Sistemas Inteligentes</option>
-                                <option value="3">Licenciatura en Biología</option>
-                                <option value="3">Licenciatra en Administración Turistica</option>
+                                <option value="1">Ixtlan de Júarez</option>
+                                <option value="2">Tamazulapam Mie</option>
+                                <option value="3">Guelatao</option>
+                                <option value="3">Villa Alta</option>
+                                <option value="3">Tlahui</option>
                             </select>
                         </div>
                     </div>
                 </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="width: 48%; padding-top: 2%;">
+                        <div class="col-12">
+                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Localidad</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Localidad 1</option>
+                                <option value="2">Localidad 2</option>
+                                <option value="3">Localidad 3</option>
+                                <option value="4">Localidad 4</option>
+                                <option value="5">Localidad 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="width: 48%; padding-top: 2%;">
+                        <div class="form-check">
+                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Colonia o Barrio</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">San Francisco</option>
+                                <option value="2">La Asunción</option>
+                                <option value="3">Santo Tomas</option>
+                                <option value="3">Colonia 4</option>
+                                <option value="3">Colonia 6</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="width: 48%; padding-top: 2%;">
+                        <div class="col-12">
+                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Calle</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Calle 1</option>
+                                <option value="2">Calle 2</option>
+                                <option value="3">Calle 3</option>
+                                <option value="3">Calle 4</option>
+                                <option value="3">Calle 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="width: 48%; padding-top: 2%;">
+                        <div class="form-check">
+                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Numero</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">654</option>
+                                <option value="2">655</option>
+                                <option value="3">545</option>
+                                <option value="3">845</option>
+                                <option value="3">555</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="width: 48%; padding-top: 2%;">
+                        <div class="form-check">
+                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Codigo Postal</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">78546</option>
+                                <option value="2">45523</option>
+                                <option value="3">45712</option>
+                                <option value="3">54451</option>
+                                <option value="3">44545</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding-top: 2%;">
+                    <div style="width: 70%;">
+                            <label for="inputNombre" class="form-label text-end" style="color: #6366F1;"> 
+                                Nombre de la casa de huéspedes o propietario</label>
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el nombre completo">
+                    </div>
+                </div>
         </div> 
+        </div>
     </div>
 </section>
 
