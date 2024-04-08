@@ -249,3 +249,24 @@ footer hr {
 }
 
 
+
+
+/*----------------todasSolicitudes--------------*/
+.cboton{
+    border: none;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+.cboton:hover{
+    background-color: #4F46E5;
+    color: white;
+}
+.filasSolicitudes{
+    border-bottom: 1px solid #4F46E5;
+}
+/*----------------todasSolicitudes--------------*/
