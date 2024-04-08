@@ -9,52 +9,27 @@
     <title>BECSIS</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid d-flex align-items-center">
-              <a class="navbar-brand" href="#"><p class="letraNav mt-2 ps-5" style="color: #6366F1; font-size: 22px;"><b>BECSIS</b></p></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto pe-4"> <!-- Utilizando la clase ms-auto -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Beca Colegiatura</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Evaluación Magistral</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">lineamientos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Mi perfil
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Mis datos</a></li>
-                      <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                      <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    
+    <div id="nav"></div>
+    <div class="container mt-3 ">
+        <div class="row" >
+            <ol class="p-1 colorFondo breadcrumb bread-primary ">
+                <button href="#" class="btn camino" id="botonInicio" >Inicio</button>
+                <button href="#" class="btn camino" id="botonInicio" >Solicitar beca</button>
+                <button href="#" class="btn btn-primary camino localizacion" >Datos personales</button>   
+            </ol>
+        </div>
+    </div>
 <section>
     <h1 class="titulo ps-5 mb-2 mt-2" style="font: bold; font-weight: 660;">MIS DATOS</h1>
     <div class="row ps-5 pe-5">
         <div class="col-4 rounded colorFondo m-2 p-4">
             <h3 style="color: #6366F1;">Informacion general</h3>
                 <div class="col-md-12 pt-2">
-                    <label for="inputNombre" class="form-label text-end" style="color: #6366F1;"> 
-                        Nombre Completo</label>
+                        <p class="textoInputs ">Nombre Completo</p>
                     <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el nombre completo del alumno">
                 </div>
-                <div class="col-12 ">
-                    <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;padding-top: 3%;">Carrera</label>
+                    <div class="col-md-12 pt-3">
+                        <p class="textoInputs">Carrera</p>
                     <select class="form-select" aria-label="Default select example">
                         <option value="1">Ingeniería Forestal</option>
                         <option value="2">Licenciatura en Ciencias Ambientales</option>
@@ -63,8 +38,8 @@
                         <option value="3">Licenciatra en Administración Turistica</option>
                     </select>
                 </div>
-                <div class="col-12">
-                    <label for="inputSeleccion" class="form-label text-end" style="color: #6366F1;padding-top: 3%;">Semestre</label>
+                <div class="col-12 pt-3">
+                    <p class="textoInputs">Semestre</p>
                     <select class="form-select" aria-label="Default select example">
                         <option value="1">Primero</option>
                         <option value="2">Segundo</option>
@@ -77,8 +52,8 @@
                         <option value="3">Decimo</option>
                     </select>
                 </div>
-                <div class="col-md-12">
-                    <label for="inputCity" class="form-label text-end" style="color: #6366F1; padding-top: 3%;">Estado Civil</label>
+                <div class="col-md-12 pt-3">
+                        <p class="textoInputs">Estado Civil</p>
                     <div style="display: flex; justify-content: space-between;">
                         <div style="width: 48%;">
                             <div class="form-check">
@@ -88,14 +63,14 @@
                         </div>
                         <div style="width: 48%;">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" checked>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
                                 <label class="form-check-label" for="flexRadioDefault2">Casado</label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <label for="inputCity" class="form-label text-start" style="color: #6366F1; padding-top: 3%;">¿Tienes los recursos económicos necesarios para tus actividades académicas?</label>
+                <div class="col-md-12 pt-3">
+                        <p class="textoInputs">¿Tienes los recursos económicos necesarios para tus actividades académicas?</p>
                     <div style="display: flex; justify-content: space-between;">
                         <div style="width: 48%;">
                             <div class="form-check">
@@ -105,14 +80,14 @@
                         </div>
                         <div style="width: 48%;">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" checked>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
                                 <label class="form-check-label" for="flexRadioDefault2">No</label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <label for="inputCity" class="form-label text-start" style="color: #6366F1; padding-top: 3%;">¿Solicitas beca alimentaria</label>
+                <div class="col-md-12 pt-3">
+                        <p class="textoInputs">¿Solicitas beca alimentaria?</p>
                     <div style="display: flex; justify-content: space-between;">
                         <div style="width: 48%;">
                             <div class="form-check">
@@ -122,7 +97,7 @@
                         </div>
                         <div style="width: 48%;">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" checked>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2">
                                 <label class="form-check-label" for="flexRadioDefault2">No</label>
                             </div>
                         </div>
@@ -133,8 +108,8 @@
     
         <div class="col rounded colorFondo m-2 p-4">
         <h3 style="color: #6366F1; padding-bottom: 1%;">Domicilio</h3>
-        <div class="col-md-12" style="color: #6366F1;">
-                <p>Marque la opción que mejor describa tu situación de vivienda:</p>
+        <div class="col-md-12">
+                <p class="textoInputs">Marque la opción que mejor describa tu situación de vivienda:</p>
         </div>
         <div class="col-md-12">
                 <div style="display: flex; justify-content: space-between;">
@@ -146,26 +121,26 @@
                     </div>
                     <div style="width: 48%;">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">Rento casa</label>
                         </div>
                     </div>
                     <div style="width: 48%;">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">Vivo von familiares</label>
                         </div>
                     </div>
                 </div>
         </div> 
-        <div class="col-md-12" style="color: #6366F1; padding-top: 2%;">
-                <p>Marque la opción que mejor describa tu situación de vivienda:</p>
+        <div class="col-md-12" style="padding-top: 2%;">
+                <p class="textoInputs">Marque la opción que mejor describa tu situación de vivienda:</p>
         </div>
         <div class="col-md-12">
                 <div style="display: flex; justify-content: space-between;">
                     <div style="width: 48%;">
                         <div class="col-12">
-                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Estado</label>
+                            <p class="textoInputs">Estado</p>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Oaxaca</option>
                                 <option value="2">Puebla</option>
@@ -177,7 +152,7 @@
                     </div>
                     <div style="width: 48%;">
                         <div class="form-check">
-                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Municipio</label>
+                            <p class="textoInputs">Municipio</p>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Ixtlan de Júarez</option>
                                 <option value="2">Tamazulapam Mie</option>
@@ -191,7 +166,7 @@
                 <div style="display: flex; justify-content: space-between;">
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="col-12">
-                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Localidad</label>
+                            <p class="textoInputs">Localidad</p>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Localidad 1</option>
                                 <option value="2">Localidad 2</option>
@@ -203,7 +178,7 @@
                     </div>
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="form-check">
-                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Colonia o Barrio</label>
+                            <p class="textoInputs">Colonia o Barrio</p>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">San Francisco</option>
                                 <option value="2">La Asunción</option>
@@ -217,7 +192,7 @@
                 <div style="display: flex; justify-content: space-between;">
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="col-12">
-                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Calle</label>
+                            <p class="textoInputs">Calle</p>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Calle 1</option>
                                 <option value="2">Calle 2</option>
@@ -229,7 +204,7 @@
                     </div>
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="form-check">
-                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Numero</label>
+                            <p class="textoInputs">Numero</p>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">654</option>
                                 <option value="2">655</option>
@@ -241,7 +216,7 @@
                     </div>
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="form-check">
-                            <label for="inputCarrera" class="form-label text-end" style="color: #6366F1;">Codigo Postal</label>
+                            <p class="textoInputs">Codigo Postal<p/>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">78546</option>
                                 <option value="2">45523</option>
@@ -252,10 +227,9 @@
                         </div>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: space-between; padding-top: 2%;">
+                <div style="display: flex; justify-content: space-between; padding-top: 1%;">
                     <div style="width: 70%;">
-                            <label for="inputNombre" class="form-label text-end" style="color: #6366F1;"> 
-                                Nombre de la casa de huéspedes o propietario</label>
+                        <p class="textoInputs">Nombre de la casa de huéspedes o propietario</p>
                             <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el nombre completo">
                     </div>
                 </div>
@@ -265,12 +239,92 @@
 </section>
 
 <section>
-    <h1 class="titulo ps-5 mb-2 mt-2" style="font: bold; font-weight: 660;">Separacion de mis cajas</h1>
+    <div class="row ms-5 me-5 colorFondo rounded p-3 mt-2 mb-2">
+        <h3 style="color: #6366F1;">Gastos e ingresos</h3>
+        <div class="row">
+            <div class="col mt-3 me-5" style="margin-right: 200%; padding-right: -50%;">
+                <p class="textoInputs">¿A cuánto hacienden tus gastos mensuales de manutención?</p>
+                <p>Lo que pagas de alimentación, transporte, vivienda, servicios médicos, libros y materiales escolares, entretenimiento, etc. (Por favor no incluyas los gastos en colegiatura e inscripciones de la universidad)</p>
+                <input type="text" id="cantTiene" style="width: 100%;" class="estiloInputs rounded">
+            </div>
+            <div class="col mt-3">
+                <p class="textoInputs">¿Dependes económicamente?</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="width: 50%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault88" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault1">Si</label>
+                        </div>
+                    </div>
+                    <div style="width: 50%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault88" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line mx-auto mt-5" style="width: 80%;"></div>
+        <div class="row">
+            <div class="col mt-3">
+                <p class="textoInputs">Nombre de la persona de la cuál dependes económicamente:</p>
+                <input type="text" id="cantTiene" style="width: 50%;" class="estiloInputs rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-3">
+                <p class="textoInputs">El trabajo de quien dependes es:</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="width: 48%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault1">Temporal</label>
+                        </div>
+                    </div>
+                    <div style="width: 48%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">Permanente</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <p class="textoInputs">Indica su ocupación:</p>
+                <input type="text" id="cantTiene" style="width: 50%;" class="estiloInputs rounded">
+            </div>
+        </div>
+        <div class="line mx-auto mt-5" style="width: 80%;"></div>
+        <div class="row">
+            <div class="col mt-3">
+                <p class="textoInputs">¿Solicitas beca alimentaria?</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="width: 48%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault1">Si</label>
+                        </div>
+                    </div>
+                    <div style="width: 80%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+<section>
     <div class="row ps-5 pe-5">
         <div class="col-6 rounded colorFondo m-2 p-4">
             <h3 style="color: #6366F1;">Transporte</h3>
             <div class="col-md-12 pt-3">
-                <label for="inputCity" class="form-label text-end" style="color: #6366F1;">¿Llevas automóvil o motocicleta cotidianamente a la universidad?</label>
+                <p class="textoInputs">¿Llevas automóvil o motocicleta cotidianamente a la universidad?</p>
                 <div style="display: flex; justify-content: space-between;">
                     <div style="width: 48%;">
                         <div class="form-check">
@@ -280,23 +334,21 @@
                     </div>
                     <div style="width: 48%;">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">No</label>
                         </div>
                     </div>
                 </div>
             </div>
                 <div class="col-8">
-                    <label for="inputSeleccion" class="form-label text-end" style="color: #6366F1;padding-top: 3%;">
-                        Selecciona tu tipo de vehículo:</label>
+                    <p class="textoInputs">Selecciona tu tipo de vehículo:</p>
                     <select class="form-select" aria-label="Default select example">
                         <option value="1">Motocicleta</option>
                         <option value="2">Coche</option>
                     </select>
                 </div>
-                <div class="col-md-12">
-                    <label for="inputCity" class="form-label text-start pt-3" style="color: #6366F1; margin-top: 2%;">
-                        ¿Qué otros medios utilizas para trasladarte a la universidad?</label>
+                <div class="col-md-12 mt-3">
+                    <p class="textoInputs">¿Qué otros medios utilizas para trasladarte a la universidad?</p>
                     <div class="col-md-12">
                         <div style="display: flex; justify-content: space-between;">
                             <div style="width: 48%;">
@@ -307,13 +359,13 @@
                                     </label>
                                 </div>
                                 <div class="form-check" style="margin-bottom: 30px;">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Automóvil de amigos
                                     </label>
                                 </div>
-                                <div class="form-check" style="margin-bottom:0px;">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Bicicleta
                                     </label>
@@ -327,13 +379,13 @@
                                     </label>
                                   </div>
                                   <div class="form-check" style="margin-bottom: 30px;">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Caminando
                                     </label>
                                   </div>
                                   <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Automovil Familiar
                                     </label>
@@ -347,7 +399,7 @@
                                     </label>
                                   </div>
                                   <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Taxi
                                     </label>
@@ -361,7 +413,7 @@
         <div class="col rounded colorFondo m-2 p-4">
             <h3 style="color: #6366F1; padding-bottom: 2%;">Información complementaria</h3>
             <div class="col-md-12" style="color: #6366F1; ">
-                    <p>¿Eres hijo o nieto de comunero de Ixtlán de Juárez?</p>
+                    <p class="textoInputs">¿Eres hijo o nieto de comunero de Ixtlán de Juárez?</p>
             </div>
             <div class="col-md-12">
                     <div style="display: flex; justify-content: space-between;">
@@ -373,14 +425,14 @@
                         </div>
                         <div style="width: 40%;">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault21" checked>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault21">
                                 <label class="form-check-label" for="flexRadioDefault21">No</label>
                             </div>
                         </div>
                     </div>
             </div> 
         <div class="col-md-12" style="color: #6366F1; padding-top: 3%;">
-            <p>¿Utilizas teléfono celular en la universidad?</p>
+            <p class="textoInputs">¿Utilizas teléfono celular en la universidad?</p>
         </div>
         <div class="col-md-12">
                 <div style="display: flex; justify-content: space-between;">
@@ -392,14 +444,14 @@
                     </div>
                     <div style="width: 40%;">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">No</label>
                         </div>
                     </div>
                 </div>
         </div> 
         <div class="col-md-12" style="color: #6366F1; padding-top: 3%;">
-            <p>¿Tienes computadora personal y/o portátil?</p>
+            <p class="textoInputs">¿Tienes computadora personal y/o portátil?</p>
         </div>
         <div class="col-md-12">
                 <div style="display: flex; justify-content: space-between;">
@@ -411,7 +463,7 @@
                     </div>
                     <div style="width: 40%;">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">No</label>
                         </div>
                     </div>
@@ -419,8 +471,7 @@
         </div> 
             <div style="display: flex; justify-content: space-between; padding-top: 3%;">
                 <div style="width: 90%;">
-                    <label for="inputNombre" class="form-label text-start" style="color: #6366F1;"> 
-                        Además del idioma español, ¿qué otro idioma, lenguaje o dialecto hablas?</label>
+                    <p class="textoInputs">Además del idioma español, ¿qué otro idioma, lenguaje o dialecto hablas?</p>
                     <input type="text" class="form-control" id="inputNombre" placeholder="">
                 </div>
             </div>
@@ -428,9 +479,10 @@
         </div>
     </div>
 </section>
-</body>
-<div id="footer"></div>
 
+
+
+<div id="footer"></div>
 <script>
     /*--------- SE AGREGA EL FOOTER ---------*/
     document.addEventListener("DOMContentLoaded", function () {
