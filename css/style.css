@@ -135,6 +135,7 @@ footer hr {
 
 
 /*----------------Nav------------------------*/
+/*----------------Nav------------------------*/
 .navbar {
     margin-top: 20px;
     margin-left: 20px; /* Margen a la izquierda */
@@ -142,15 +143,16 @@ footer hr {
     font-size: 20px;
     border-radius: 2%;
 }
+
 .navbar-nav .nav-link {
     color: #6366F1; /* Color de las letras */
     margin-right: 25px;
 }
 
-.nav-link:hover{
-    color: #6366F1; /* Color de las letras */
-    font-weight: bold;
+.nav-link:hover {
+    color: #4F46E5;
 }
+
 /*Botones de Menu Alumnos*/
 .btnMenuAlumno {
     font-size: 1.55rem; /* Tamaño de fuente más grande */
@@ -160,13 +162,15 @@ footer hr {
     border-color: #F5F5F5;
     border-radius: 14px;
 }
-.letraBotonA{
+
+.letraBotonA {
     font-weight: 500;
     font-size: 40px;
     line-height: 60px;
     color: #4F46E5;
 }
-.letraBotonB{
+
+.letraBotonB {
     font-weight: 500;
     font-size: 20px;
     line-height: 60px;
@@ -191,4 +195,5 @@ footer hr {
     background: #F5F5F5;
     border-radius: 26px;
 }
+
 
