@@ -79,6 +79,51 @@ body {
     border-radius: 53px;
     background-color: #4F46E5;
 }
+
+.cuadro {
+    border: 1px solid #ccc;
+    padding: 5px; /* Reduciendo el padding */
+    margin-bottom: 5px; /* Reduciendo el margin-bottom */
+    border-radius: 7px; /* Reduciendo el border-radius */
+    background-color: #F5F5F5;
+    width: 15cm;
+    height: 14cm;
+    margin-left: 1.7cm;
+}
+
+
+.titulo-cuadro {
+    font-weight: 50px;
+    font-size: 20px;
+    line-height: 60px;
+    color: #4F46E5;
+    margin-left:1cm;
+}
+.campo label {
+    display: flex;
+    margin-bottom: 5px;
+    color: #818CF8;
+    margin-left: 1cm;
+}
+
+/*------------------ Estilo Modal ---------------------*/
+
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*------------------ Estilo Modal ---------------------*/
+
+.campo input,
+.campo select {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #6366F1;
+    border-radius: 7px;
+    margin-left: 1cm;
+}
+
 .divApartados{
     margin-top: 1.8cm; margin-left: 3.6cm; 
     margin-bottom: 1cm;
@@ -141,6 +186,70 @@ footer hr {
 }
 
 /*----------------Footer------------------------*/
+
+
+/*----------------Nav------------------------*/
+
+.navbar {
+    margin-top: 20px;
+    margin-left: 20px; /* Margen a la izquierda */
+    margin-right: 20px; /* Margen a la derecha */   
+    font-size: 20px;
+    border-radius: 2%;
+}
+
+.navbar-nav .nav-link {
+    color: #6366F1; /* Color de las letras */
+    margin-right: 25px;
+}
+
+/*----------------Nav------------------------*/
+
+/*Botones de Menu Alumnos*/
+.btnMenuAlumno {
+    font-size: 1.55rem; /* Tamaño de fuente más grande */
+    padding: 0.75rem 1.5rem; /* Aumentar el relleno */
+    width: 300%;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+    border-radius: 14px;
+}
+
+.letraBotonA {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4F46E5;
+}
+
+.letraBotonB {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 60px;
+    color: #4F46E5;
+}
+
+/* Cambiar el color al pasar el cursor */
+.btnMenuAlumno:hover {
+    /* Auto layout */
+    background: #6366F1;
+    border-radius: 14px;
+}
+
+.btnMenuAlumno:hover p,
+.btnMenuAlumno:hover div {
+    color: white;
+}
+
+/*Fonfo Formulario datos personales*/
+.custom-background {
+  /* Rectangle 9 */
+    background: #F5F5F5;
+    border-radius: 26px;
+}
+
+
+
 
 /*----------------todasSolicitudes--------------*/
 .cboton{
