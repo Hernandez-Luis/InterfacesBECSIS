@@ -52,8 +52,8 @@
     </div>
 
     <div class="container-fluid row">
-        <p class="ms-5 textoInputs text-start col-1">Mostrar</p>
-        <select name="opciones" style="width: 55px;" class="col- text-start estiloInputs">
+        <p class="ms-5 textoInputs text-start col-1 col-sm-auto">Mostrar</p>
+        <select name="opciones" style="width: 55px;" class="col-1 text-start estiloInputs">
             <option value="opcion1" class="textoInputs">1</option>
             <option value="opcion2" class="textoInputs">2</option>
             <option value="opcion3" class="textoInputs">3</option>
@@ -65,9 +65,115 @@
             <option value="opcion4" class="textoInputs">9</option> 
           </select>
           <p class="ms-3 textoInputs text-start col-1">Solicitudes</p>
-          <p class="ms-3 textoInputs text-end col-7">Buscar</p>
+          <p class="ms-3 textoInputs text-end col-lg-7 col-sm-5">Buscar</p>
           <input type="text" style="width: 13%; height: 25px;" class="estiloInputs col-12">
     </div>
     
+    <div class="row justify-content-center align-items-center mt-5" id="contenedorSolicitudes">
+        <div class="col-8 p-3 rounded colorFondo w-75">
+            <div class="row justify-content-between">
+                <div class="col-auto col-sm-2 col-lg-4">
+                    <h6 class="textoInputs text-start">Nombre</h6>
+                    <div class="row text-center ms-1 fontPoppins">
+                        Hipólito Javier Domínguez Hernández
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        Adriana Hernández Ramírez
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        Emmanuel Gracida Tapia
+                    </div>
+                </div>
+                <div class="col-auto col-sm-2 col-lg-1">
+                    <h6 class="textoInputs text-start">Semestre</h6>
+                    <div class="row text-center ms-1 fontPoppins">
+                        Decimo
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        Decimo
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        Decimo
+                    </div>
+                </div>
+                <div class="col-auto col-sm-2 col-lg-1">
+                    <h6 class="textoInputs text-start">Grupo</h6>
+                    <div class="row text-center ms-1 fontPoppins">
+                        1003
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        1003
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        1003
+                    </div>
+                </div>
+                <div class="col-auto col-sm-2 col-lg-1">
+                    <h6 class="textoInputs text-start">Solicitud</h6>
+                    <div class="row text-center ms-1 fontPoppins">
+                        <a href=""><img src="../img/solicitudIcono.png" alt="Documento" class="w-50 mb-2"></a>
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        <a href=""><img src="../img/solicitudIcono.png" alt="Documento" class="w-50 mb-2"></a>
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        <a href=""><img src="../img/solicitudIcono.png" alt="Documento" class="w-50 mb-2"></a>
+                    </div>
+                </div>
+                <div class="col-auto col-sm-2 col-lg-1">
+                    <h6 class="textoInputs text-start">Exportar</h6>
+                    <div class="row text-center ms-1 fontPoppins">
+                        <a href=""><img src="../img/exportarIcono.png" alt="logoExportar" class="w-50 mb-2"></a>
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        <a href=""><img src="../img/exportarIcono.png" alt="logoExportar" class="w-50 mb-2"></a>
+                    </div>
+                    <div class="row text-center ms-1 fontPoppins">
+                        <a href=""><img src="../img/exportado.png" alt="logoExportar" class="w-50 mb-2"></a>
+                    </div>
+                </div>
+                <div class="col-auto col-sm-2 col-lg-1">
+                    <h6 class="textoInputs text-start">Estado</h6>
+                    <div class="row text-center fontPoppins subtitulo">
+                        Sin revisar
+                    </div>
+                    <div class="row text-center fontPoppins subtitulo" style="color: green;">
+                        Revisado
+                    </div>
+                    <div class="row text-center fontPoppins subtitulo" style="color: red;">
+                        Pendiente
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid row">
+    <div class="col-lg-6 col-sm-6 col-xs-1 d-flex align-items-center">
+        <h6 class="ms-5 textoInputs text-start">Mostrando 1 a 8 de 20 solicitudes</h6>
+    </div>
+    <div class="col-lg-6 col-sm-6 d-flex justify-content-end mt-2">
+        <nav aria-label="Page navigation example" class="textoInputs">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 </body>
 </html>
