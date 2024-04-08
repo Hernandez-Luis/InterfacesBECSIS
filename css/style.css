@@ -212,10 +212,15 @@ footer hr {
     font-size: 20px;
     border-radius: 2%;
 }
+
 .navbar-nav .nav-link {
     color: #6366F1; /* Color de las letras */
-
 }
+
+.nav:hover{
+    color: #4F46E5;
+}
+
 /*Botones de Menu Alumnos*/
 .btn {
     font-size: 1.55rem; /* Tamaño de fuente más grande */
