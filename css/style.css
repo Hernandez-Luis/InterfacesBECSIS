@@ -115,6 +115,11 @@ body {
     background-color: #BFBFBF;
 }
 
+.estiloPocentaje{
+    font-size: 90px;
+    font: bolder;
+    color: #6366F1;
+}
 /*----------------Footer------------------------*/
 
 footer{
