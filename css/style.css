@@ -106,6 +106,15 @@ body {
     margin-left: 1cm;
 }
 
+/*------------------ Estilo Modal ---------------------*/
+
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*------------------ Estilo Modal ---------------------*/
+
 .campo input,
 .campo select {
     width: 90%;
@@ -177,3 +186,87 @@ footer hr {
 }
 
 /*----------------Footer------------------------*/
+
+
+/*----------------Nav------------------------*/
+
+.navbar {
+    margin-top: 20px;
+    margin-left: 20px; /* Margen a la izquierda */
+    margin-right: 20px; /* Margen a la derecha */   
+    font-size: 20px;
+    border-radius: 2%;
+}
+
+.navbar-nav .nav-link {
+    color: #6366F1; /* Color de las letras */
+    margin-right: 25px;
+}
+
+/*----------------Nav------------------------*/
+
+/*Botones de Menu Alumnos*/
+.btnMenuAlumno {
+    font-size: 1.55rem; /* Tamaño de fuente más grande */
+    padding: 0.75rem 1.5rem; /* Aumentar el relleno */
+    width: 300%;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+    border-radius: 14px;
+}
+
+.letraBotonA {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4F46E5;
+}
+
+.letraBotonB {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 60px;
+    color: #4F46E5;
+}
+
+/* Cambiar el color al pasar el cursor */
+.btnMenuAlumno:hover {
+    /* Auto layout */
+    background: #6366F1;
+    border-radius: 14px;
+}
+
+.btnMenuAlumno:hover p,
+.btnMenuAlumno:hover div {
+    color: white;
+}
+
+/*Fonfo Formulario datos personales*/
+.custom-background {
+  /* Rectangle 9 */
+    background: #F5F5F5;
+    border-radius: 26px;
+}
+
+
+
+
+/*----------------todasSolicitudes--------------*/
+.cboton{
+    border: none;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+.cboton:hover{
+    background-color: #4F46E5;
+    color: white;
+}
+.filasSolicitudes{
+    border-bottom: 1px solid #4F46E5;
+}
+/*----------------todasSolicitudes--------------*/

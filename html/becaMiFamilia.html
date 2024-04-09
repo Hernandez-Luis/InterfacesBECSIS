@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Mi familia</title>
 </head>
+
 <body>
-    <div class="ms-5 me-5 ps-5 pe-5">
+    <div id="nav"></div>
+
+    <div class="container">
         <h1 class="titulo ps-5" style="font: bold; font-weight: 660;">MI FAMILIA</h1>
         <div class="row ms-5 me-5">
             <div class="col-8 p-3 rounded colorFondo">
@@ -96,7 +99,8 @@
                     <label for="apoyoNo" style="color: #6366F1;" class="mb-5">No</label>
                 </div> 
                 <div>
-                    <p class="mt-5" style="color: #6366F1;">Indica el apoyo que recibe tu familia:</p>
+                    <p class="mt-5" style="color: #6366F1;">
+                        Indica el apoyo que recibe tu familia:</p>
                     <input type="text" class="estiloInputs rounded" style="width: 98%;">
                 </div>
             </div>
@@ -174,9 +178,9 @@
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="telefono" checked>
+                                        <input class="form-check-input" type="checkbox" value="" id="telefono" >
                                         <label class="form-check-label subtitulo" for="telefono">
-                                          Telefono
+                                          Telefono 
                                         </label>
                                       </div>
                                 </div>
@@ -188,7 +192,7 @@
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="otros" checked>
+                                        <input class="form-check-input" type="checkbox" value="" id="otros" >
                                         <label class="form-check-label subtitulo" for="otros">
                                           Otros
                                         </label>
@@ -236,19 +240,19 @@
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="tvCable" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="tvCable" >
                                 <label class="form-check-label subtitulo" for="tvCable">
                                     T.V por cable
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="aireAcondicionado" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="aireAcondicionado" >
                                 <label class="form-check-label subtitulo" for="aireAcondicionado">
                                     Aire acondicionado
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="microondas" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="microondas" >
                                 <label class="form-check-label subtitulo" for="microondas">
                                     Microondas
                                 </label>
@@ -262,19 +266,19 @@
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="televisor" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="televisor" >
                                 <label class="form-check-label subtitulo" for="televisor">
                                     Televisor
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="autoPropio" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="autoPropio" >
                                 <label class="form-check-label subtitulo" for="autoPropio">
                                     Automovil propio
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="videocasetera" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="videocasetera" >
                                 <label class="form-check-label subtitulo" for="videocasetera">
                                     Videocasetera
                                 </label>
@@ -288,19 +292,19 @@
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="lavadoraRopa" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="lavadoraRopa" >
                                 <label class="form-check-label subtitulo" for="lavadoraRopa">
                                     Lavadora de ropa
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="equipoSonido" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="equipoSonido" >
                                 <label class="form-check-label subtitulo" for="equipoSonido">
                                     Equipo de sonido
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="espacioEstudio" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="espacioEstudio" >
                                 <label class="form-check-label subtitulo" for="espacioEstudio">
                                     Espacio de estudio
                                 </label>
@@ -319,19 +323,19 @@
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="dvd" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="dvd" >
                                 <label class="form-check-label subtitulo" for="dvd">
                                     DVD-CDWR
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="escritorio" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="escritorio" >
                                 <label class="form-check-label subtitulo" for="escritorio">
                                     Escritorio
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="enciclopedias" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="enciclopedias" >
                                 <label class="form-check-label subtitulo" for="enciclopedias">
                                     Enciclopedias
                                 </label>
@@ -345,19 +349,19 @@
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="librero" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="librero" >
                                 <label class="form-check-label subtitulo" for="librero">
                                     Librero
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="librosEspeciales" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="librosEspeciales" >
                                 <label class="form-check-label subtitulo" for="librosEspeciales">
                                     Libros especiales
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="calculadora" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="calculadora" >
                                 <label class="form-check-label subtitulo" for="calculadora">
                                     Calculadora
                                 </label>
@@ -371,13 +375,13 @@
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="maquinaEscribir" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="maquinaEscribir" >
                                 <label class="form-check-label subtitulo" for="maquinaEscribir">
                                     Maquina de escribir
                                 </label>
                             </div>
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="diccionario" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="diccionario" >
                                 <label class="form-check-label subtitulo" for="diccionario">
                                     Diccionario
                                 </label>
@@ -469,11 +473,10 @@
         </div>
     </div>
 
-    <footer>
-        <div id="footer"></div> 
-    </footer>
+    <div id="footer"></div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        /*--------- SE AGREGA EL FOOTER ---------*/
+        document.addEventListener("DOMContentLoaded", function () {
             const footerContainer = document.getElementById('footer');
             fetch("footer.html")
                 .then(response => response.text())
@@ -481,6 +484,25 @@
                     footerContainer.innerHTML = html;
                 });
         });
+
+        /*--------- SE AGREGA EL NAV ---------*/
+        document.addEventListener("DOMContentLoaded", function () {
+            const footerContainer = document.getElementById('nav');
+            fetch("navAlumnos.html")
+                .then(response => response.text())
+                .then(html => {
+                    footerContainer.innerHTML = html;
+                });
+        });
+        // Función para mostrar la ventana modal
+        function mostrarModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        // Función para cerrar la ventana modal
+        function cerrarModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
     </script>
 </body>
 </html>
