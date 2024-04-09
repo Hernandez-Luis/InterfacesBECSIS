@@ -31,7 +31,7 @@
                         Mi perfil
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Mis datos</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="misDatos()">Mis datos</a></li>
                         <li><a class="dropdown-item" href="#" onclick="mostrarModal()">Cambiar contraseña</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -67,6 +67,30 @@
         </div>
     </div>
 
+    <div id="modal2" class="modal ">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" style="color: #4F46E5;">Cambiar contraseña</h5>
+                </div>
+                <div class="modal-body">
+                    <p class="textoInputs" style="color: #4F46E5;">Contraseña actual</p>
+                    <input type="text" class="form-control " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <p class="textoInputs mt-5" style="color: #4F46E5;">Contraseña nueva</p>
+                    <input type="text" class="form-control " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <p class="textoInputs mt-5" style="color: #4F46E5;">Contraseña nueva</p>
+                    <input type="text" class="form-control " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-danger" onclick="cerrarModal2()">Cancelar</button>
+                    <button type="button" class="btn btn-success">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
     <script>
         // Función para mostrar la ventana modal
         function mostrarModal() {
@@ -77,6 +101,15 @@
         function cerrarModal() {
             document.getElementById('modal').style.display = 'none';
         }
+
+        function misDatos() {
+            document.getElementById('modal2').style.display = 'block';
+        }
+
+        function cerrarModal2() {
+            document.getElementById('modal2').style.display = 'none';
+        }
+      
     </script>
 </body>
 </html>
