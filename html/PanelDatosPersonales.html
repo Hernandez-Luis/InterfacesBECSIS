@@ -25,12 +25,13 @@
         <div class="col-4 rounded colorFondo m-2 p-4">
             <h3 style="color: #6366F1;">Informacion general</h3>
                 <div class="col-md-12 pt-2">
-                        <p class="textoInputs ">Nombre Completo</p>
-                    <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el nombre completo del alumno">
+                        <p class="textoInputs">Nombre Completo</p>
+                    <input type="text" class="form-control" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese el nombre completo del alumno">
                 </div>
                     <div class="col-md-12 pt-3">
                         <p class="textoInputs">Carrera</p>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example" >
+                        <option selected class="subtitulo">Elige una opcion</option>
                         <option value="1">Ingeniería Forestal</option>
                         <option value="2">Licenciatura en Ciencias Ambientales</option>
                         <option value="3">Ingeniería de Desarrollo de Software y Sistemas Inteligentes</option>
@@ -40,16 +41,17 @@
                 </div>
                 <div class="col-12 pt-3">
                     <p class="textoInputs">Semestre</p>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="1">Primero</option>
-                        <option value="2">Segundo</option>
-                        <option value="3">Cuarto</option>
-                        <option value="3">Quinto</option>
-                        <option value="3">Sexto</option>
-                        <option value="3">Septimo</option>
-                        <option value="3">Octavo</option>
-                        <option value="3">Noveno</option>
-                        <option value="3">Decimo</option>
+                    <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                        <option selected class="subtitulo">Elige una opcion</option>
+                        <option value="1" class="subtitulo">Primero</option>
+                        <option value="2" class="subtitulo">Segundo</option>
+                        <option value="3" class="subtitulo">Cuarto</option>
+                        <option value="3" class="subtitulo">Quinto</option>
+                        <option value="3" class="subtitulo">Sexto</option>
+                        <option value="3" class="subtitulo">Septimo</option>
+                        <option value="3" class="subtitulo">Octavo</option>
+                        <option value="3" class="subtitulo">Noveno</option>
+                        <option value="3" class="subtitulo">Decimo</option>
                     </select>
                 </div>
                 <div class="col-md-12 pt-3">
@@ -58,13 +60,13 @@
                         <div style="width: 48%;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault1">Soltero</label>
+                                <p class="subtitulo">Soltero</p>
                             </div>
                         </div>
                         <div style="width: 48%;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">Casado</label>
+                                <p class="subtitulo">Casado</p>
                             </div>
                         </div>
                     </div>
@@ -75,13 +77,13 @@
                         <div style="width: 48%;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">Si</label>
+                                <p class="subtitulo">Si</p>
                             </div>
                         </div>
                         <div style="width: 48%;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">No</label>
+                                <p class="subtitulo">No</p>
                             </div>
                         </div>
                     </div>
@@ -92,13 +94,13 @@
                         <div style="width: 48%;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">Si</label>
+                                <p class="subtitulo">Si</p>
                             </div>
                         </div>
                         <div style="width: 48%;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">No</label>
+                                <p class="subtitulo">No</p>
                             </div>
                         </div>
                     </div>
@@ -116,19 +118,19 @@
                     <div style="width: 48%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">Rento cuarto</label>
+                            <p class="subtitulo">Rento cuarto</p>
                         </div>
                     </div>
                     <div style="width: 48%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">Rento casa</label>
+                            <p class="subtitulo">Rento casa</p>
                         </div>
                     </div>
                     <div style="width: 48%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">Vivo von familiares</label>
+                            <p class="subtitulo">Vivo von familiares</p>
                         </div>
                     </div>
                 </div>
@@ -141,24 +143,26 @@
                     <div style="width: 48%;">
                         <div class="col-12">
                             <p class="textoInputs">Estado</p>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">Oaxaca</option>
-                                <option value="2">Puebla</option>
-                                <option value="3">Chiapas</option>
-                                <option value="3">Veracruz</option>
-                                <option value="3">Durango</option>
+                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                                <option selected class="subtitulo">Elige una opcion</option>
+                                <option value="1" class="subtitulo">Oaxaca</option>
+                                <option value="2" class="subtitulo">Puebla</option>
+                                <option value="3" class="subtitulo">Chiapas</option>
+                                <option value="3" class="subtitulo">Veracruz</option>
+                                <option value="3" class="subtitulo">Durango</option>
                             </select>
                         </div>
                     </div>
                     <div style="width: 48%;">
                         <div class="form-check">
                             <p class="textoInputs">Municipio</p>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">Ixtlan de Júarez</option>
-                                <option value="2">Tamazulapam Mie</option>
-                                <option value="3">Guelatao</option>
-                                <option value="3">Villa Alta</option>
-                                <option value="3">Tlahui</option>
+                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                                <option selected class="subtitulo">Elige una opcion</option>
+                                <option value="1" class="subtitulo">Ixtlan de Júarez</option>
+                                <option value="2" class="subtitulo">Tamazulapam Mie</option>
+                                <option value="3" class="subtitulo">Guelatao</option>
+                                <option value="3" class="subtitulo">Villa Alta</option>
+                                <option value="3" class="subtitulo">Tlahui</option>
                             </select>
                         </div>
                     </div>
@@ -167,24 +171,24 @@
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="col-12">
                             <p class="textoInputs">Localidad</p>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">Localidad 1</option>
-                                <option value="2">Localidad 2</option>
-                                <option value="3">Localidad 3</option>
-                                <option value="4">Localidad 4</option>
-                                <option value="5">Localidad 5</option>
+                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                                <option value="1" class="subtitulo">Localidad 1</option>
+                                <option value="2" class="subtitulo">Localidad 2</option>
+                                <option value="3" class="subtitulo">Localidad 3</option>
+                                <option value="4" class="subtitulo">Localidad 4</option>
+                                <option value="5" class="subtitulo">Localidad 5</option>
                             </select>
                         </div>
                     </div>
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="form-check">
                             <p class="textoInputs">Colonia o Barrio</p>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">San Francisco</option>
-                                <option value="2">La Asunción</option>
-                                <option value="3">Santo Tomas</option>
-                                <option value="3">Colonia 4</option>
-                                <option value="3">Colonia 6</option>
+                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                                <option value="1" class="subtitulo">San Francisco</option>
+                                <option value="2" class="subtitulo">La Asunción</option>
+                                <option value="3" class="subtitulo">Santo Tomas</option>
+                                <option value="3" class="subtitulo">Colonia 4</option>
+                                <option value="3" class="subtitulo">Colonia 6</option>
                             </select>
                         </div>
                     </div>
@@ -193,36 +197,36 @@
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="col-12">
                             <p class="textoInputs">Calle</p>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">Calle 1</option>
-                                <option value="2">Calle 2</option>
-                                <option value="3">Calle 3</option>
-                                <option value="3">Calle 4</option>
-                                <option value="3">Calle 5</option>
+                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                                <option value="1" class="subtitulo">Calle 1</option>
+                                <option value="2" class="subtitulo">Calle 2</option>
+                                <option value="3" class="subtitulo">Calle 3</option>
+                                <option value="3" class="subtitulo">Calle 4</option>
+                                <option value="3" class="subtitulo">Calle 5</option>
                             </select>
                         </div>
                     </div>
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="form-check">
                             <p class="textoInputs">Numero</p>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">654</option>
-                                <option value="2">655</option>
-                                <option value="3">545</option>
-                                <option value="3">845</option>
-                                <option value="3">555</option>
+                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                                <option value="1" class="subtitulo">654</option>
+                                <option value="2" class="subtitulo">655</option>
+                                <option value="3" class="subtitulo">545</option>
+                                <option value="3" class="subtitulo">845</option>
+                                <option value="3" class="subtitulo">555</option>
                             </select>
                         </div>
                     </div>
                     <div style="width: 48%; padding-top: 2%;">
                         <div class="form-check">
                             <p class="textoInputs">Codigo Postal<p/>
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">78546</option>
-                                <option value="2">45523</option>
-                                <option value="3">45712</option>
-                                <option value="3">54451</option>
-                                <option value="3">44545</option>
+                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                                <option value="1" class="subtitulo">78546</option>
+                                <option value="2" class="subtitulo">45523</option>
+                                <option value="3" class="subtitulo">45712</option>
+                                <option value="3" class="subtitulo">54451</option>
+                                <option value="3" class="subtitulo">44545</option>
                             </select>
                         </div>
                     </div>
@@ -230,7 +234,7 @@
                 <div style="display: flex; justify-content: space-between; padding-top: 1%;">
                     <div style="width: 70%;">
                         <p class="textoInputs">Nombre de la casa de huéspedes o propietario</p>
-                            <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el nombre completo">
+                            <input type="text" class="form-control" class="subtitulo" id="inputNombre" placeholder="Ingrese el nombre completo">
                     </div>
                 </div>
         </div> 
