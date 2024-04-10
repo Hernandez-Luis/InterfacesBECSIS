@@ -234,6 +234,9 @@ footer hr {
     color: #6366F1; /* Color de las letras */
     margin-right: 25px;
 }
+.dropdown-item:hover{
+    font-weight: bold;
+}
 
 /*----------------Nav------------------------*/
 
@@ -273,15 +276,15 @@ footer hr {
     color: white;
 }
 
-/*Fonfo Formulario datos personales*/
+/*Fondo Formulario datos personales*/
 .custom-background {
   /* Rectangle 9 */
     background: #F5F5F5;
     border-radius: 26px;
 }
-
-
-
+.letraNav{
+    color: #4F46E5;
+}
 
 /*----------------todasSolicitudes--------------*/
 .cboton{
@@ -302,3 +305,4 @@ footer hr {
     border-bottom: 1px solid #4F46E5;
 }
 /*----------------todasSolicitudes--------------*/
+
