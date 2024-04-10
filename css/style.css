@@ -241,11 +241,16 @@ footer hr {
     color: white;
 }
 
-/*Fonfo Formulario datos personales*/
+/*Fondo Formulario datos personales*/
 .custom-background {
   /* Rectangle 9 */
     background: #F5F5F5;
     border-radius: 26px;
 }
+.letraNav{
+    color: #4F46E5;
+}
 
-
+.dropdown-item:hover{
+    font-weight: bold;
+}
