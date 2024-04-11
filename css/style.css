@@ -248,6 +248,7 @@ footer hr {
 .nav-link:hover{
     font-weight: bold;
     font-size: 20px;
+}
   
 .dropdown-item:hover{
     font-weight: bold;
@@ -320,4 +321,3 @@ footer hr {
     border-bottom: 1px solid #4F46E5;
 }
 /*----------------todasSolicitudes--------------*/
-
