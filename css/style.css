@@ -13,6 +13,14 @@ body {
     color: #4F46E5;
 }
 
+#colorTabla{
+    background-color: #6C757D;
+}
+
+.coloTabla th,colorTabla td{
+    background-color: #6C757D;
+}
+
 .subtitulo {
     font-size: 16px;
     line-height: 20px;
