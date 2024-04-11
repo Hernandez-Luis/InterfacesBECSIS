@@ -63,6 +63,10 @@ body {
     border-radius: 15px;
     font-size: smaller;
 }
+.camino:hover{
+    background-color: #4F46E5;
+    color:#F5F5F5;
+}
 
 .breadcrumb {
   border: 0px solid rgb(43, 42, 139); 
@@ -201,6 +205,10 @@ footer hr {
 .navbar-nav .nav-link {
     color: #6366F1; /* Color de las letras */
     margin-right: 25px;
+}
+.nav-link:hover{
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /*----------------Nav------------------------*/
