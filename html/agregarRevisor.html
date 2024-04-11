@@ -11,8 +11,103 @@
 <body>
     <div id="nav"></div>
 
+    <div class="container m-7 mt-3">
+        <div class="row">
+            <ol class="p-1 colorFondo breadcrumb bread-primary ">
+                <button href="#" class="btn camino" id="botonInicio">Inicio</button>
+                <button href="#" class="btn camino" id="botonSolicitudes">Administrar</button>
+                <button href="#" class="btn camino" id="botonSolicitudes">Alumnos</button>
+                <button href="#" class="btn btn-primary camino localizacion" id="solicitudesCarrera">Agregar</button>
+            </ol>
+        </div>
+    </div>
+
     <div class="d-flex justify-content-center">
-        hola
+        <h1 class="titulo">Agregar revisor</h1>
+    </div>
+
+    <div class="container mt-5">
+            <div class="row ps-5 pe-5">
+                <div class=" col-6 rounded colorFondo m-2 p-4">
+                    <h3 style="color: #6366F1;">Datos del personal</h3>
+                    <label for="nombreRevisor" class="ms-1 mt-3" style="color: #6366F1;">
+                        Nombre
+                    </label>
+                    <input id="nombreAlumno" type="text" class="ms-1 w-100 form-control">
+                    <label for="apellidoARevisor" class="ms-1 mt-3" style="color: #6366F1;">
+                        Apellido
+                    </label>
+                    <input id="apellidoAlumno" type="text" class="ms-1 w-100 form-control">
+                    <label for="curpRevisor" class="ms-1 mt-3" style="color: #6366F1;">
+                        CURP
+                    </label>
+                    <input id="curpAlumno" type="text" class="ms-1 w-100 form-control">
+                    <div class="row">
+                        <div class="col">
+                            <label for="correoRevisor" class="ms-1 mt-3" style="color: #6366F1;">
+                                Correo electronico
+                            </label>
+                            <input id="correoRevisor" type="text" class="ms-1 w-100 form-control">
+                        </div>
+                        <div class="col">
+                            <label for="telefonoRevisor" class="ms-1 mt-3" style="color: #6366F1;">
+                                Numero telefonico
+                            </label>
+                            <input id="telefonoRevisor" type="number" class="ms-1 w-100 form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col rounded colorFondo m-2 p-4 h-70">
+                        <h3 style="color: #6366F1; padding-bottom: 2%;">Datos laborales</h3>
+                        <div class="row">
+                            <div class="col">
+                                <label for="areaSelect" class="ms-1 mb-2" style="color: #6366F1;">
+                                    Area
+                                </label>
+                                <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                                    <option selected class="subtitulo">Elige una opcion</option>
+                                    <option value="1" class="subtitulo">Area 1</option>
+                                    <option value="2" class="subtitulo">Area 2</option>
+                                    <option value="3" class="subtitulo">Area 3</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="departamentoSelect" class="ms-1 mb-2" style="color: #6366F1;">
+                                    Departamento/Cubo
+                                </label>
+                                <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                                    <option selected class="subtitulo">Elige una opcion</option>
+                                    <option value="1" class="subtitulo">Cubo 1</option>
+                                    <option value="2" class="subtitulo">Cubo 2</option>
+                                    <option value="3" class="subtitulo">Cubo 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="nipRevisor" class="ms-1 mb-2 mt-4" style="color: #6366F1;">
+                                    Nip
+                                </label>
+                                <input id="nipRevisor" type="number" class="ms-1 w-100 form-control">
+                            </div>
+                            <div class="col">
+                                <label for="matriculaRevisor" class="ms-1 mb-2 mt-4" style="color: #6366F1;">
+                                    Matricula
+                                </label>
+                                <input id="matriculaRevisor" type="number" class="ms-1 w-100 form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary hBtn estiloBoton">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 
     <div id="footer"></div>
