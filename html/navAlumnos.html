@@ -33,6 +33,8 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#"><p class="letraNav">Mis datos</p></a></li>
                         <li><a class="dropdown-item" href="#" onclick="mostrarModal()"><p class="letraNav">Cambiar contraseña</p></a></li>
+                        <li><a class="dropdown-item" href="#" onclick="misDatos()">Mis datos</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="mostrarModal()">Cambiar contraseña</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -49,7 +51,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title mx-auto" style="color: #4F46E5;">Cambiar contraseña</h5>
+                    <h2 class="modal-title mx-auto" style="color: #4F46E5;">Cambiar contraseña</h2>
                 </div>
                 <div class="modal-body">
                     <p class="textoInputs" style="color: #4F46E5;">Contraseña actual</p>
@@ -67,16 +69,50 @@
         </div>
     </div>
 
-    <script>
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
+    <div id="modal2" class="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fontPoppins p-3" style="background-color: white;">
+                <div class=" d-flex justify-content-end">
+                    <button type="button" class="btn-close" aria-label="Close" onclick="cerrarModal2()"></button>
+                </div>
+                <div class="modal-header">
+                    <h2 class="modal-title mx-auto" style="color: #4F46E5; font: bolder;">Informacion del alumno</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <p class="textoInputs" style="color: #4F46E5;">Nombre: </p>
+                        </div>
+                        <div class="col d-flex justify-content-start textoInputs" style="color: #4F46E5;">
+                            Luis Alberto Hernandez Ramirez
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-2">
+                            <p class="textoInputs" style="color: #4F46E5;">Carrera: </p>
+                        </div>
+                        <div class="col d-flex justify-content-start textoInputs" style="color: #4F46E5;">
+                            Licenciatura en Informatica
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-2">
+                            <p class="textoInputs" style="color: #4F46E5;">Semestre: </p>
+                        </div>
+                        <div class="col d-flex justify-content-start textoInputs" style="color: #4F46E5;">
+                            10º
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    
+
+    <script src="../javaScript.js/funcionamiento.js"></script>
+
+    
 </body>
 </html>
