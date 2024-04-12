@@ -7,3 +7,31 @@ function mostrarModal() {
 function cerrarModal() {
     document.getElementById('modal').style.display = 'none';
 }
+
+function misDatos() {
+    document.getElementById('modal2').style.display = 'block';
+}
+
+function cerrarModal2() {
+    document.getElementById('modal2').style.display = 'none';
+}
+
+ /*--------- SE AGREGA EL FOOTER ---------*/
+ document.addEventListener("DOMContentLoaded", function () {
+    const footerContainer = document.getElementById('footer');
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(html => {
+            footerContainer.innerHTML = html;
+        });
+});
+
+/*--------- SE AGREGA EL NAV ---------*/
+document.addEventListener("DOMContentLoaded", function () {
+    const footerContainer = document.getElementById('nav');
+    fetch("navAlumnos.html")
+        .then(response => response.text())
+        .then(html => {
+            footerContainer.innerHTML = html;
+        });
+});
