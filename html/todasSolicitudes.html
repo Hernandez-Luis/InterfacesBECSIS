@@ -17,13 +17,9 @@
         <div class="row">
             <ol class="p-1 colorFondo breadcrumb bread-primary ">
                 <a href="MenuRevisor.html"><button class="btn camino" id="botonInicio">Inicio</button></a>
-                <a href="todasSolicitudes.html"><button class="btn camino" id="botonSolicitudes">Solicitudes</button></a>
+                <a href="SubMenuRevisor.html"><button class="btn camino" id="botonSolicitudes">Solicitudes</button></a>
                 <a href="todasSolicitudes.html"><button class="btn camino" id="botonTodasSolicitudes">Todas las Solicitudes</button></a>
                 <a href=""><button class="btn btn-primary camino localizacion" id="solicitudesCarrera">Informatica</button></a>
-
-                
-                
-                
             </ol>
         </div>
     </div>
@@ -80,83 +76,45 @@
         <input type="text" style="width: 13%; height: 25px;" class="estiloInputs col-12">
     </div>
 
-    <div class="row justify-content-center align-items-center mt-5" id="contenedorSolicitudes">
-        <div class="col-8 p-3 rounded colorFondo w-75">
-            <div class="row justify-content-between">
-                <div class="col-auto col-sm-2 col-lg-4">
-                    <h6 class="textoInputs text-start">Nombre</h6>
-                    <div class="row text-center ms-1 fontPoppins">
-                        Hipólito Javier Domínguez Hernández
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        Adriana Hernández Ramírez
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        Emmanuel Gracida Tapia
-                    </div>
-                </div>
-                <div class="col-auto col-sm-2 col-lg-1">
-                    <h6 class="textoInputs text-start">Semestre</h6>
-                    <div class="row text-center ms-1 fontPoppins">
-                        Decimo
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        Decimo
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        Decimo
-                    </div>
-                </div>
-                <div class="col-auto col-sm-2 col-lg-1">
-                    <h6 class="textoInputs text-start">Grupo</h6>
-                    <div class="row text-center ms-1 fontPoppins">
-                        1003
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        1003
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        1003
-                    </div>
-                </div>
-                <div class="col-auto col-sm-2 col-lg-1">
-                    <h6 class="textoInputs text-start">Solicitud</h6>
-                    <div class="row text-center ms-1 fontPoppins">
-                        <a href=""><img src="../img/solicitudIcono.png" alt="Documento" class="w-50 mb-2"></a>
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        <a href=""><img src="../img/solicitudIcono.png" alt="Documento" class="w-50 mb-2"></a>
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        <a href=""><img src="../img/solicitudIcono.png" alt="Documento" class="w-50 mb-2"></a>
-                    </div>
-                </div>
-                <div class="col-auto col-sm-2 col-lg-1">
-                    <h6 class="textoInputs text-start">Exportar</h6>
-                    <div class="row text-center ms-1 fontPoppins">
-                        <a href=""><img src="../img/exportarIcono.png" alt="logoExportar" class="w-50 mb-2"></a>
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        <a href=""><img src="../img/exportarIcono.png" alt="logoExportar" class="w-50 mb-2"></a>
-                    </div>
-                    <div class="row text-center ms-1 fontPoppins">
-                        <a href=""><img src="../img/exportado.png" alt="logoExportar" class="w-50 mb-2"></a>
-                    </div>
-                </div>
-                <div class="col-auto col-sm-2 col-lg-1">
-                    <h6 class="textoInputs text-start">Estado</h6>
-                    <div class="row text-center fontPoppins subtitulo">
-                        Sin revisar
-                    </div>
-                    <div class="row text-center fontPoppins subtitulo" style="color: green;">
-                        Revisado
-                    </div>
-                    <div class="row text-center fontPoppins subtitulo" style="color: red;">
-                        Pendiente
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="mx-auto mt-4 mb-5" style="width: 70%;">
+        <table id="tablaSolicitudes" class="table table-rounded">
+            <thead>
+              <tr>
+                <th scope="col"><p style="color: #4F46E5;">Nombre completo</p></th>
+                <th scope="col"><p style="color: #4F46E5;">Semestre</p></th>
+                <th scope="col"><p style="color: #4F46E5;">Grupo</p></th>
+                <th scope="col"><p style="color: #4F46E5;">Solicitud</p></th>
+                <th scope="col"><p style="color: #4F46E5;">Exportar</p></th>
+                <th scope="col"><p style="color: #4F46E5;">Estado</p></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th><p class="subtitulo">Emmanuel Gracida Tapia</p></th>
+                <td><p class="subtitulo">Sexto</p></td>
+                <td><p class="subtitulo">603</p></td>
+                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
+                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/exportarIcono.png" alt=""></a></td>
+                <td><p  class="subtitulo" style="color:green;">Finalizado ✓</p></td>
+              </tr>
+              <tr>
+                <th><p class="subtitulo">Adriana Hernández Ramírez</p></th>
+                <td><p class="subtitulo">Decimo</p></td>
+                <td><p class="subtitulo">1003</p></td>
+                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
+                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/exportarIcono.png" alt=""></a></td>
+                <td><p  class="subtitulo" style="color:green;">Finalizado ✓</p></td>
+              </tr>
+              <tr>
+                <th><p class="subtitulo">Hipólito Javier Domínguez Hernández</p></th>
+                <td><p class="subtitulo">Octavo</p></td>
+                <td><p  class="subtitulo">803</p></td>
+                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
+                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/exportarIcono.png" alt=""></a></td>
+                <td><p  class="subtitulo" style="color:green;">Finalizado ✓</p></td>
+
+            </tbody>
+          </table>
     </div>
 
     <div class="container-fluid row">
