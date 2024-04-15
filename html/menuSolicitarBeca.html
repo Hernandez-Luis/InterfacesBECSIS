@@ -37,63 +37,9 @@
     </div>
     <a class="btn btn-outline-primary hBtn mt-3  estiloBoton" style="margin-left: 17cm;" href="../html/PanelDatosPersonales.html" role="button">Solicitar beca</a>
     
-    <div class="container-fluid  text-center">
-        <div class="row justify-content-md-center mt-5 ">
-            <div class="col-auto">
-                <a href=""><button type="button" class="btn btn-outline-primary cboton titulo ">MIS DATOS</button></a>
-            </div>
-            <div class="col-auto">
-                <a href="../html/miTutor.html"><button type="button" class="btn btn-outline-primary cboton titulo ">MI TUTOR</button></a>
-            </div>
-            <div class="col-auto">
-                <a href=""><button type="button" class="btn btn-outline-primary cboton titulo ">MI FAMILIA</button></a>
-            </div>
-            <div class="col-auto">
-                <a href=""><button type="button" class="btn btn-outline-primary cboton titulo " style=" line-height: 0.9cm;">GASTOS E<br> INGRESOS</button></a>
-            </div>
-            <div class="col-auto">
-                <a href=""><button type="button" class="btn btn-outline-primary cboton titulo ">DOCUMENTOS</button></a>
-            </div> 
-        </div>
-        <a class="btn btn-outline-primary hBtn mt-3  estiloBoton"  href="#" role="button">Solicitar beca</a>
-
-        
-        
-    </section>
-
-   
     <div id="footer"></div>
 
-    <script>
-        /*--------- SE AGREGA EL FOOTER ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('footer');
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-
-        /*--------- SE AGREGA EL NAV ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('nav');
-            fetch("navAlumnos.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    <script src="../javaScript.js/funcionamiento.js"></script>
 
 </body>
 </html>
