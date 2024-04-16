@@ -10,11 +10,13 @@
     
 </head>
 <body>
-    <div class="container m-7 " style="margin-top: 4cm; " >
+    <div id="nav"></div>
+
+    <div class="container m-7 " style="margin-top: 1cm; " >
         <div class="row" >
             <ol class="p-1 colorFondo breadcrumb bread-primary ">
-                <button href="#" class="btn camino" id="botonInicio" >Inicio</button>
-                <button href="#" class="btn btn-primary camino localizacion" >Resultados de solicitud</button>   
+                <a href="../html/menuAlumno.html" style="text-decoration: none;"><button class="btn camino" id="botonInicio" >Inicio</button></a>
+                <a  href="../html/panelNoCorrecciones.html" style="text-decoration: none;"><button class="btn btn-primary camino localizacion" id="botonResultadosBeca">Resultados de solicitud</button></a>
             </ol>
         </div>
     </div>
@@ -30,7 +32,38 @@
         </div>
 
     </section>
-    
+    <div id="footer"></div>
+    <script>
+        /*--------- SE AGREGA EL FOOTER ---------*/
+        document.addEventListener("DOMContentLoaded", function () {
+            const footerContainer = document.getElementById('footer');
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(html => {
+                    footerContainer.innerHTML = html;
+                });
+        });
+
+        /*--------- SE AGREGA EL NAV ---------*/
+        document.addEventListener("DOMContentLoaded", function () {
+            const footerContainer = document.getElementById('nav');
+            fetch("navAlumnos.html")
+                .then(response => response.text())
+                .then(html => {
+                    footerContainer.innerHTML = html;
+                });
+        });
+        // Función para mostrar la ventana modal
+        function mostrarModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        // Función para cerrar la ventana modal
+        function cerrarModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+
     
 </body>
 </html>

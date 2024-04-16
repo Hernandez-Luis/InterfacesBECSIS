@@ -13,6 +13,14 @@ body {
     color: #4F46E5;
 }
 
+#colorTabla{
+    background-color: #6C757D;
+}
+
+.coloTabla th,colorTabla td{
+    background-color: #6C757D;
+}
+
 .subtitulo {
     font-size: 16px;
     line-height: 20px;
@@ -38,7 +46,6 @@ body {
 }
 
 .textoInputs {
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
@@ -55,6 +62,7 @@ body {
     background-color: #F5F5F5;
 }
 
+
 .localizacion{
     background-color: #4F46E5; 
 }
@@ -62,6 +70,10 @@ body {
 .camino{
     border-radius: 15px;
     font-size: smaller;
+}
+.camino:hover{
+    background-color: #4F46E5;
+    color:#F5F5F5;
 }
 
 .breadcrumb {
@@ -234,6 +246,11 @@ footer hr {
     color: #6366F1; /* Color de las letras */
     margin-right: 25px;
 }
+.nav-link:hover{
+    font-weight: bold;
+    font-size: 20px;
+}
+  
 .dropdown-item:hover{
     font-weight: bold;
 }
@@ -243,8 +260,8 @@ footer hr {
 /*Botones de Menu Alumnos*/
 .btnMenuAlumno {
     font-size: 1.55rem; /* Tamaño de fuente más grande */
-    padding: 0.75rem 1.5rem; /* Aumentar el relleno */
-    width: 300%;
+    padding: 0.50rem 1.5rem; /* Aumentar el relleno */
+    width: 250%;
     background-color: #F5F5F5;
     border-color: #F5F5F5;
     border-radius: 14px;
@@ -252,15 +269,15 @@ footer hr {
 
 .letraBotonA {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 30px;
     color: #4F46E5;
 }
 
 .letraBotonB {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 60px;
+    font-size: 15px;
+    line-height: 20px;
     color: #4F46E5;
 }
 
@@ -306,3 +323,16 @@ footer hr {
 }
 /*----------------todasSolicitudes--------------*/
 
+/*----------------Solicitudes Pendientes-------------*/
+#tablaSolicitudes {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #F5F5F5; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#tablaSolicitudes th, #tablaSolicitudes td {
+    background-color: #F5F5F5; 
+}
