@@ -45,3 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
             footerContainer.innerHTML = html;
         });
 });
+
+/*--------- SE AGREGA EL NAV DE ADMINISTRADOR---------*/
+document.addEventListener("DOMContentLoaded", function () {
+    const footerContainer = document.getElementById('navAdministrador');
+    fetch("navAdministrador.html")
+        .then(response => response.text())
+        .then(html => {
+            footerContainer.innerHTML = html;
+        });
+});
