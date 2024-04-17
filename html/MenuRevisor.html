@@ -12,9 +12,8 @@
 </head>
 <body>
     <header>
-        <div id="nav"></div>
+        <nav id="nav"><nav/>
     </header>
-       
     <section>
         <div class="container text-center">
             <div class="col" style="height: 300px; margin-top: 50px;">
@@ -30,7 +29,7 @@
                     </div>
                     <div class="col d-flex justify-content-center align-items-center flex-column me-5" style="height: 400px;">
                         <div class="vstack gap-1 col-md-5 ">
-                            <a href="RevicionSolicitud.html">
+                            <a href="SubMenuRevisor.html">
                                 <button type="button" class="btnMenuAlumno btn-secondary mt-4 me-10 mb-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Haz clic aquí para solicitar una beca de colegiatura">
                                     <p class="letraBotonA">Solicitudes de beca colegiatura</p>
                                     <div class="letraBotonB">Haz clic para revisar las beca colegiatura</div>
@@ -49,36 +48,7 @@
         </div>
     </section>
 
-    <div id="footer"></div>
-    <script>
-        /*--------- SE AGREGA EL FOOTER ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('footer');
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-
-        /*--------- SE AGREGA EL NAV ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('nav');
-            fetch("navAlumnos.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    <footer id="footer"><footer/>
+    <script src="../javaScript.js/funcionamiento.js"></script>
 </body>
 </html>
