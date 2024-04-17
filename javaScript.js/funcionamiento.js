@@ -26,10 +26,20 @@ function cerrarModal2() {
         });
 });
 
-/*--------- SE AGREGA EL NAV ---------*/
+/*--------- SE AGREGA EL NAV DE ALUMNO---------*/
 document.addEventListener("DOMContentLoaded", function () {
     const footerContainer = document.getElementById('nav');
     fetch("navAlumnos.html")
+        .then(response => response.text())
+        .then(html => {
+            footerContainer.innerHTML = html;
+        });
+});
+
+/*--------- SE AGREGA EL NAV DE REVISOR---------*/
+document.addEventListener("DOMContentLoaded", function () {
+    const footerContainer = document.getElementById('navRevisor');
+    fetch("navRevisor.html")
         .then(response => response.text())
         .then(html => {
             footerContainer.innerHTML = html;
