@@ -17,20 +17,21 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:5500/html/MenuRevisor.html">Inicio</a>
-                    </li>
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Mi perfil
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"><p class="letraNav">Mis datos</p></a></li>
+                        <li><a class="dropdown-item" href="#" onclick="misDatos()"><p class="letraNav">Mis datos</p></a></li>
                         <li><a class="dropdown-item" href="#" onclick="mostrarModal()"><p class="letraNav">Cambiar contraseña</p></a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#"><p class="letraNav">Cerrar sesion</p></a></li>
+                        <li><a class="dropdown-item" href="../html/inicioSesion.html"><p class="letraNav">Cerrar sesion</p></a></li>
                     </ul>
               </li>
             </ul>
@@ -61,16 +62,39 @@
         </div>
     </div>
 
-    <script>
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
+    <div id="modal2" class="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fontPoppins p-3" style="background-color: white;">
+                <div class=" d-flex justify-content-end">
+                    <button type="button" class="btn-close" aria-label="Close" onclick="cerrarModal2()"></button>
+                </div>
+                <div class="modal-header">
+                    <h2 class="modal-title mx-auto" style="color: #4F46E5; font: bolder;">Información del administrador</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <p class="textoInputs" style="color: #4F46E5;">Nombre: </p>
+                        </div>
+                        <div class="col d-flex justify-content-start textoInputs" style="color: #4F46E5;">
+                            Efren David Jimenez Martinez
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-2">
+                            <p class="textoInputs" style="color: #4F46E5;">Area: </p>
+                        </div>
+                        <div class="col d-flex justify-content-start textoInputs" style="color: #4F46E5;">
+                            Servicios escolares
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+
+    <script src="../javaScript.js/funcionamiento.js"></script>
 </body>
 </html>
