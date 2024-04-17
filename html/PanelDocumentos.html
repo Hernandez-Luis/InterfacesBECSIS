@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documentos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div id="nav"></div>
+    <nav id="nav"></nav>
     <div class="container m-7 mt-3">
         <div class="row">
             <ol class="p-1 colorFondo breadcrumb bread-primary ">
@@ -34,9 +34,8 @@
                     municipal, presidente municipal, síndico municipal, etc.). Esta debe contener el nombre del
                     estudiante; el parentesco
                     con el tutor, por ejemplo: hijo, sobrino o nieto; la ocupación del tutor, por ejemplo: campesino,
-                    carpintero, etc.; el ingreso mensual aproximado escrito con número y letra, por ejemplo: $2000.00
-                    dos
-                    mil pesos, en este ingreso no se debe incluir lo que se recibe por parte de los apoyos
+                    carpintero, etc.; el ingreso mensual aproximado escrito con número y letra, por ejemplo: $2000.00, 
+                    dos mil pesos, en este ingreso no se debe incluir lo que se recibe por parte de los apoyos
                     gubernamentales externos, si es que se cuenta con ellos; la hoja debe ser membretada firmada y
                     sellada por
                     parte de la autoridad. Puedes descargar un ejemplo dando clic <a href="">aquí.</a><br> <br>
@@ -56,9 +55,8 @@
                 </p>
                 5. En caso de tener hermanos (as) mayores de 18 años que no estudien ni trabajen anexar copia del acta
                 de nacimiento o copia de la credencial de elector. <br><br>
-                6. En caso de que ser originario de la comunidad de la comunidad de Ixtlán de Juárez y además sea hijo o
-                nieto de comunero ACTIVO, anexar constancia emitida por parte del comisariado de bienes <br>
-                comunales de Ixtlán de Juárez.<br>
+                6. En caso de que ser originario de la comunidad de Ixtlán de Juárez y además sea hijo o
+                nieto de comunero ACTIVO, anexar constancia emitida por parte del comisariado de bienes comunales de Ixtlán de Juárez.<br>
             </div>
         </div>
 
@@ -129,37 +127,8 @@
         <button class="btn btn-outline-primary hBtn mt-3 estiloBoton">Guardar</button>
     </div>
 
-    <div id="footer"></div>
-    <script>
-        /*--------- SE AGREGA EL FOOTER ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('footer');
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-
-        /*--------- SE AGREGA EL NAV ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('nav');
-            fetch("navAlumnos.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    <footer id="footer"></footer>
+    <script src="../javaScript.js/funcionamiento.js"></script>
 </body>
 
 </html>
