@@ -9,7 +9,7 @@
     <title>Resultados de solicitud</title>
 </head>
 <body>
-    <div id="nav"></div>
+    <nav id="nav"></nav>
 
     <div class="container m-7 " style="margin-top: 0.5cm;" >
         <div class="row" >
@@ -23,60 +23,39 @@
         <h1 class="titulo" style="text-align: center; color: #6366F1; font-family: poppins; size: 40px; line-height: 60px;">Resultados de Solicitud</h1>
         <p style="text-align: center; color: #6366F1; font-family: poppins; size: 30px; line-height: 30px;">¡Ups!, al parecer tienes detalles en tu solicitud</p>
         <p style="text-align: center; color: #6366F1; font-family: poppins; size: 19px; line-height: 18px;">Recuerda que tienes hasta el día 10 de octubre a las 23:59:59 para entregar tus correcciones.</p>
-        <p style="text-align: center; color: #6366F1; font-family: poppins; size: 21px; line-height: 18px;">Observaciones</p>  
 
-        <div class="divApartados">
-
-            <div>
-
-                <button type="button" class="btn apartadosBtn titulo hBtn hBtn mt-3  estiloBoton" style="margin-left: 13cm; height: 105px; width: 255px;" data-bs-toggle="" data-bs-placement="" title="">
-                    <p class="letraBotonB text-center">Observaciones</p>
-
-                </button>
-                
-            </div>  
-
-    
-        <a class="btn btn-outline-primary hBtn mt-3  estiloBoton" style="margin-left: 15cm;" href="#" role="button">Correguir</a>
-     
+        <div class="col rounded colorFondo m-2 p-4">
+            <div style="display: flex; justify-content: space-between; padding-top: 3%;">
+                <div style="width: 100%;">
+                    <p class="textoInputs" style="text-align: center;">Observaciónes</p>
+                    <textarea rows="4" cols="50" class="form-control estiloInputs" style="width: 100%;padding-bottom: 50%;" placeholder="Observaciónes..."></textarea>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="width: 48%;">
+                        <div class="form-check">
+                            <div class="d-flex justify-content-center mt-5">
+                                <button class="btn btn-outline-primary hBtn estiloBoton">Corregir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 48%;">
+                        <div class="form-check">
+                        </div>
+                    </div>
+                    
+                </div>
         </div>
+        
         
     </main>
     
 
 
     
-    <div id="footer"></div>
+    <footer id="footer"></footer>
 
-    <script>
-        /*--------- SE AGREGA EL FOOTER ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('footer');
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-
-        /*--------- SE AGREGA EL NAV ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('nav');
-            fetch("navAlumnos.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    <script src="../javaScript.js/funcionamiento.js"></script>
 </body>
 </html>
