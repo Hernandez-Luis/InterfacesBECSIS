@@ -9,7 +9,7 @@
     <title>SOLICITAR BECA</title>
 </head>
 <body > 
-    <div id="nav"></div>
+    <nav id="nav"></nav>
     
     <div class="container m-7 " style="margin-top: 1cm;" >
         <div class="row">
@@ -340,37 +340,8 @@
         
     </section>
 
-    <div id="footer"></div>
-    <script>
-        /--------- SE AGREGA EL FOOTER ---------/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('footer');
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-
-        /--------- SE AGREGA EL NAV ---------/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('nav');
-            fetch("navAlumnos.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    <footer id="footer"></footer>
+    <script src="../javaScript.js/funcionamiento.js"></script>
 
 
 </body>
