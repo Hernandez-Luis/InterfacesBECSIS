@@ -35,14 +35,14 @@
                         Ambientales</button></a>
             </div>
             <div class="col-auto">
-                <a href=""><button type="button" class="btn btn-outline-primary cboton titulo">Informatica</button></a>
+                <a href=""><button type="button" class="btn btn-outline-primary cboton titulo">Informática</button></a>
             </div>
             <div class="col-auto">
                 <a href=""><button type="button" class="btn btn-outline-primary cboton titulo">Biología</button></a>
             </div>
             <div class="col-auto">
                 <a href=""><button type="button" class="btn btn-outline-primary cboton titulo">Administración
-                        Turistica</button></a>
+                        Turística</button></a>
             </div>
         </div>
         <div class="row justify-content-md-center">
@@ -93,7 +93,7 @@
                 <th><p class="subtitulo">Emmanuel Gracida Tapia</p></th>
                 <td><p class="subtitulo">Sexto</p></td>
                 <td><p class="subtitulo">603</p></td>
-                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
+                <td><a href="RevicionSolicitud.html"><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
                 <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/exportarIcono.png" alt=""></a></td>
                 <td><p  class="subtitulo" style="color:green;">Finalizado ✓</p></td>
               </tr>
@@ -101,7 +101,7 @@
                 <th><p class="subtitulo">Adriana Hernández Ramírez</p></th>
                 <td><p class="subtitulo">Decimo</p></td>
                 <td><p class="subtitulo">1003</p></td>
-                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
+                <td><a href="RevicionSolicitud.html"><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
                 <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/exportarIcono.png" alt=""></a></td>
                 <td><p  class="subtitulo" style="color:green;">Finalizado ✓</p></td>
               </tr>
@@ -109,7 +109,7 @@
                 <th><p class="subtitulo">Hipólito Javier Domínguez Hernández</p></th>
                 <td><p class="subtitulo">Octavo</p></td>
                 <td><p  class="subtitulo">803</p></td>
-                <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
+                <td><a href="RevicionSolicitud.html"><img style="width: 20%;" class="ms-3" src="../img/solicitudIcono.png" alt=""></a></td>
                 <td><a href=""><img style="width: 20%;" class="ms-3" src="../img/exportarIcono.png" alt=""></a></td>
                 <td><p  class="subtitulo" style="color:green;">Finalizado ✓</p></td>
 
@@ -145,36 +145,7 @@
     </div>
     <div id="footer"></div>
 
-    <script>
-        /*--------- SE AGREGA EL FOOTER ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('footer');
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-
-        /*--------- SE AGREGA EL NAV ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('nav');
-            fetch("navAlumnos.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    <script src="../javaScript.js/funcionamiento.js"></script>
 </body>
 
 </html>

@@ -45,11 +45,11 @@
                 <div class="line mx-auto mt-5"style="width: 60%;" ></div>
                 <div style="display: flex; margin-top:1cm;" >
                     <div class="campo" >
-                        <label for="parentesco">Telefono</label>
+                        <label for="parentesco">Teléfono</label>
                         <input style="width:230px;" type="text" id="parentesco" name="parentesco">
                     </div>
                     <div class="campo">
-                        <label for="parentesco">Correo electronico</label>
+                        <label for="parentesco">Correo electrónico</label>
                         <input style="width:229.8px;" type="text" id="parentesco" name="parentesco">
                     </div>
                 </div>
@@ -79,14 +79,14 @@
                     <div class="campo">
                         <label for="estado">Estado</label>
                         <select style="width:278.5px; color: #6C757D;" id="estado" name="estado">
-                            <option value="estado1">Elige una opcion</option>
+                            <option value="estado1">Elige una opción</option>
                             <option value="estado2">Estado 2</option>
                         </select>
                     </div>
                     <div class="campo">
                         <label for="municipio">Municipio</label>
                         <select style="width:278.8px; color: #6C757D;" id="municipio" name="municipio">
-                            <option value="municipio1">Elige una opcion</option>
+                            <option value="municipio1">Elige una opción</option>
                             <option value="municipio2">Municipio 2</option>
                         </select>
                     </div>
@@ -95,14 +95,14 @@
                     <div class="campo">
                         <label for="estado">Localidad</label>
                         <select style="width:278.5px; color:  #6C757D" id="estado" name="estado">
-                            <option value="estado1">Elige una opcion</option>
+                            <option value="estado1">Elige una opción</option>
                             <option value="estado2">Localidad 2</option>
                         </select>
                     </div>
                     <div class="campo">
                         <label for="municipio">Colonia o barrio</label>
                         <select style="width:278.6px; color:  #6C757D;" id="municipio" name="municipio">
-                            <option value="municipio1">Elige una opcion</option>
+                            <option value="municipio1">Elige una opción</option>
                             <option value="municipio2">Colonia 2</option>
                         </select>
                     </div>
@@ -127,36 +127,7 @@
     
     <div id="footer"></div>
 
-    <script>
-        /*--------- SE AGREGA EL FOOTER ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('footer');
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-
-        /*--------- SE AGREGA EL NAV ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('nav');
-            fetch("navAlumnos.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    <script src="../javaScript.js/funcionamiento.js"></script>
 </body>
 </html>
 

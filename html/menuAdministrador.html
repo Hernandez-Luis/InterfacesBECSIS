@@ -15,7 +15,7 @@
         <img src="../img/menuAdmin.png" style="width: 35%; height: 35%; margin-left:33.8%;" class="img-fluid" alt="">
         <div class="row justify-content-md-center mt-5">
             <div class="col-auto">
-                <a href=""><button type="button" class="btn btn-outline-primary cboton titulo">Alumnos</button></a>
+                <a href="../html/administrarAlumno.html"><button type="button" class="btn btn-outline-primary cboton titulo">Alumnos</button></a>
             </div>
             <div class="col-auto">
                 <a href="administrarRevisores.html"><button type="button" class="btn btn-outline-primary cboton titulo">Revisores</button></a>
@@ -27,35 +27,6 @@
     </main>
     
     <div id="footer"></div>
-    <script>
-        /*--------- SE AGREGA EL FOOTER ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('footer');
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-
-        /*--------- SE AGREGA EL NAV ---------*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const footerContainer = document.getElementById('nav');
-            fetch("navAlumnos.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                });
-        });
-        // Función para mostrar la ventana modal
-        function mostrarModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        // Función para cerrar la ventana modal
-        function cerrarModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+    <script src="../javaScript.js/funcionamiento.js"></script>
 </body>
 </html>
