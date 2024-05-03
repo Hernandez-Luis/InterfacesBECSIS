@@ -296,13 +296,13 @@
                 </div>
 
             </div>
-            <div class="line mx-auto mt-5" style="width: 68%;"></div>
+        <div class="line mx-auto mt-5" style="width: 68%;"></div>
             <h3 style="color: #6366F1;" class="mt-4">Personas dependientes</h3>
             <div class="mt-2">
                 <p class="textoInputs">Además de ti y tus padres, ¿Cuántas personas dependen económicamente de tu ingreso familiar ?</p>
                 <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 20%;" id="inputNombre" placeholder="">
             </div>
-            <p class="textoInputs mt-3">Personas que dependen económicamente:</p>
+        <p class="textoInputs mt-3">Personas que dependen económicamente:</p>
             <div style="background-color: white; border-color: #6366F1; border-style: solid; border-width: .5px; width: 98.6%;" class="ms-2 rounded p-3 row">
                 <div class="col-4">
                     <p class="textoInputs">Nombre completo:</p>
@@ -342,6 +342,40 @@
                     <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputInst" placeholder="">
                 </div>
             </div>
+            
+            <div style="background-color: white; border-color: #6366F1; border-style: solid; border-width: .5px; width: 98.6%;" class="ms-2 rounded p-3 row mt-2">
+                <div class="col-3">
+                    <p class="textoInputs">Nombre completo:</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombreDep" placeholder="Ingrese el nombre de persona dependiente ">
+                </div>
+                <div class="col-1">
+                    <p class="textoInputs">Edad:</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="">
+                </div>
+                
+                <div class="col-2">
+                    <p class="textoInputs">Grado de estudios:</p>
+                    <select class="form-select estiloInputs" style="width: 104%;" aria-label="Default select example">
+                        <option selected class="subtitulo">Elige una opción</option>
+                        <option value="1" class="subtitulo">Primaria</option>
+                        <option value="2" class="subtitulo">Secundaria</option>
+                        <option value="3" class="subtitulo">Bachillerato</option>
+                        <option value="4" class="subtitulo">Universidad</option>
+                        <option value="5" class="subtitulo">Postgrado</option>
+                    </select>                    
+                </div>
+                <div class="col-3">
+                    <p class="textoInputs">Nombre de su instituciónes:</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputInst" placeholder="">
+                </div>
+                <div class="col" >
+                    <p class="textoInputs">Subir comprobante:</p>
+                    <input id="reciboLuz" type="file" class="ms-1 w-100 form-control">
+                </div>
+            </div>
+            
+
+
         </div>
         <div class="d-flex justify-content-center mt-5">
             <button class="btn btn-outline-primary hBtn mt-3 estiloBoton">Guardar</button>
