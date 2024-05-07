@@ -49,7 +49,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    color: black;
+    color: #213635;
 }
 
 .line {
@@ -243,7 +243,7 @@ footer hr {
 }
 
 .navbar-nav .nav-link {
-    color: #6366F1; /* Color de las letras */
+    color: #313d30; /* Color de las letras */
     margin-right: 25px;
 }
 .nav-link:hover{
