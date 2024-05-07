@@ -147,11 +147,11 @@ body {
 }
 
 .divApartados{
-    margin-top: 1.8cm; margin-left: 3.6cm; 
+    margin-top: 1.8cm; margin-left: 20%; 
     margin-bottom: 1cm;
+
 }
 .apartadosBtn{
-
     height: 2.1cm; width: 4.7cm;
     background-color: #F5F5F5;
     border-radius: 15px;
