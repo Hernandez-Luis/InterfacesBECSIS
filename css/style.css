@@ -51,7 +51,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    color: black;
+    color: #213635;
 }
 
 .line {
@@ -164,7 +164,7 @@ body {
 }
 
 .how-section1 p{
-    color: #a2a3fb;
+    color: black;
     font-size: 14px; text-align: justify;
     font-family: sans-serif;
     width: 140%;
@@ -245,7 +245,7 @@ footer hr {
 }
 
 .navbar-nav .nav-link {
-    color: #6366F1; /* Color de las letras */
+    color: #313d30; /* Color de las letras */
     margin-right: 25px;
 }
 .nav-link:hover{
