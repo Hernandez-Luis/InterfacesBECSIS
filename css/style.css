@@ -49,7 +49,7 @@ body {
 
 .textoInputs {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 100%;
     line-height: 20px;
     color: #213635;
 }
@@ -330,8 +330,6 @@ footer hr {
     border-radius: 15px;
     overflow: hidden;
     background-color: #F5F5F5; 
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -342,3 +340,5 @@ footer hr {
 .colorMorado{
     color: #818CF8;
 }
+
+/*--------------- Tabla Administrar Alumnos  ---------------*/
