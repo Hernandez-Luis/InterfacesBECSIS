@@ -30,51 +30,53 @@
     <main>
         <h1 class="titulo" style="text-align:left; margin-left: 1.6cm;"> MI TUTOR</h1>
         <p class="subtitulo" style="text-align: left; margin-left:1.6cm;">Datos del padre, madre o tutor o familiar más cercano (preferiblemente, del que se depende económicamente) </p>
-
-        <div class="contenedor-flex" style="display: flex;">
-            <div class="cuadro colorFondo">
-                <h2 class="titulo-cuadro">Datos personales</h2>
-                <div class="ms-4 me-4">
-                    <label class="textoInputs" for="nombre">Nombre completo</label>
-                    <input class="estiloInputs rounded" style="width: 100%;" type="text" id="nombre" name="nombre">
+        <div class="container-auto row ">
+            <div class="col-9 col-xs-2 col-sm-1 col-md-9 col-xl-5  rounded colorFondo m-2 p-4 ms-4">
+                <h3 style="color: #6366F1;">Información general</h3>
+                <div class="col-12">
+                    <p class="textoInputs">Nombre Completo</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese el nombre completo">
                 </div>
-                <div class="mt-3 ms-4 me-4">
-                    <label class="textoInputs" for="nombre">Parentesco</label>
-                    <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
-                        <option selected class="subtitulo">Elige una opción</option>
-                        <option value="1" class="subtitulo">Padre</option>
-                        <option value="2" class="subtitulo">Madre</option>
-                        <option value="3" class="subtitulo">Hermano</option>
-                        <option value="4" class="subtitulo">Hermana</option>
-                        <option value="5" class="subtitulo">Tio</option>
-                        <option value="6" class="subtitulo">Tia</option>
-                        <option value="7" class="subtitulo">Abuelo</option>
-                        <option value="8" class="subtitulo">Abuela</option>
-                    </select>
-                </div>
-                <div class="line mx-auto mt-5"style="width: 60%;" ></div>
-                <div class="row mt-4 ms-3 me-3" >
-                    <div class="col" >
-                        <label for="parentesco">Teléfono</label>
-                        <input class="estiloInputs rounded" style="width: 100%;" type="text" id="parentesco" name="parentesco">
+                <div class="col-12 pt-3">
+                    <p class="textoInputs">Parentesco</p>
+                <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example" >
+                    <option selected class="subtitulo">Elige una opción</option>
+                    <option value="1">Padre</option>
+                    <option value="2">Madre</option>
+                    <option value="3">Hermano/a</option>
+                    <option value="3">Tio/a</option>
+                    <option value="3">Abuelo</option>
+                </select>
+            </div>
+            <div class="col-12 pt-3">
+                <div style="display: flex; justify-content: space-between;">
+                    
+                    <div style="width: 100%;">
+                        <p class="textoInputs">Correo electronico</p>
+                        <div class="form-check">
+                            <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese su correo electronico">
+                        </div>
                     </div>
-                    <div class="col">
-                        <label for="parentesco">Correo electrónico</label>
-                        <input class="estiloInputs rounded" style="width: 100%;" type="text" id="parentesco" name="parentesco">
-                    </div>
-                </div>
-                <div class="mt-4" style="color: #6366F1;">
-                    <p style="margin-left: 1cm;">¿Es trabajador de la UNSIJ o SUNEO?</p>
-                    <div class="mt-3" style="margin-left:0.4cm;">
-                        <input type="radio" class="input-outline-primary ms-4" id="apoyoSi" name="domicilio" style="color: #6366F1;">
-                        <label for="apoyoSi" style="color:#6C757D;" class="me-5">Si</label>
-                        <input type="radio" class="input-outline-primary" id="aopyoNo" name="domicilio" style="color: #6366F1;">
-                        <label for="apoyoNo" style="color:#6C757D;" class="mb-5">No</label>
+                    <div style="width: 100%;">
+                        <p class="textoInputs">Telefono</p>
+                        <div class="form-check">
+                            <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese N° Telefono">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="cuadro colorFondo" style="width: 18cm;">
-                <h2 class="titulo-cuadro">Domicilio</h2>
+            <div class="mt-4" style="color: #6366F1;">
+                <p>¿Es trabajador de la UNSIJ o SUNEO?</p>
+                <div class="mt-3">
+                    <input type="radio" class="input-outline-primary ms-4" id="apoyoSi" name="domicilio" style="color: #6366F1;">
+                    <label for="apoyoSi" style="color:#6C757D;" class="me-5">Si</label>
+                    <input type="radio" class="input-outline-primary" id="aopyoNo" name="domicilio" style="color: #6366F1;">
+                    <label for="apoyoNo" style="color:#6C757D;" class="mb-5">No</label>
+                </div>
+            </div>
+            </div>
+            <div class="col-9 col-xs-2 col-sm-1 col-md-9 col-xl-6  rounded colorFondo m-2 p-4 ms-4">
+                <h3 style="color: #6366F1;">Información general</h3>
                 <p class="subtitulo" style="text-align: left; margin-left:1cm;">Indica la dirección de la persona de quien se depende económicamente, si éste es el caso, o de lo contrario, a la persona que se pueda localizar para aclaraciones.</p>
                 <div class="mt-1" style="color: #6366F1;" >
                     <p style="color:#6366F1;margin-left: 1cm;" for="trabajador">¿El domicilio de tu tutor coincide con el que te encuentras actualmente?</p>
@@ -127,20 +129,40 @@
                             </select>
                         </div>
                     </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <p class="textoInputs">Distrito</p>
+                            <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                                <option selected class="subtitulo">Elige una opción</option>
+                                <option value="1" class="subtitulo">Distrito 1</option>
+                                <option value="2" class="subtitulo">Distrito 2</option>
+                                <option value="3" class="subtitulo">Distrito 3</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p class="textoInputs">Región</p>
+                            <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                                <option selected class="subtitulo">Elige una opción</option>
+                                <option value="1" class="subtitulo">Región 1</option>
+                                <option value="2" class="subtitulo">Región 2</option>
+                                <option value="3" class="subtitulo">Región 3</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row ms-3 mt-4 me-3">
                     <div class="col">
                         <label>Calle</label>
-                        <input class="estiloInputs rounded" style="width: 100%; height: 60%;" type="text" id="parentesco" name="parentesco">  
+                        <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="">
                     </div>
                     <div class="col">
                         <label>Numero</label>
-                        <input class="estiloInputs rounded" style="width: 100%; height: 60%;" type="text" id="parentesco" name="parentesco">
+                        <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="">
                     </div>
                     <div class="col">
                         <label>Codigo postal</label>
-                        <input class="estiloInputs rounded" style="width: 100%; height: 60%;" type="text" id="parentesco" name="parentesco">
+                        <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="">
                     </div>
                 </div>
          </div>

@@ -32,11 +32,13 @@
 <section>
     <h1 class="titulo ps-5 mb-1 mt-2 fw-bold fs-1">MIS DATOS</h1>
 
-    <div class="container-auto row">
-        <div class="col-xs-2 col-sm-12 col-md-2 col-lg-11  rounded colorFondo m-2 p-4">
+    <div class="container-auto row ">
+        <div class="col-9 col-xs-2 col-sm-1 col-md-9 col-xl-4  rounded colorFondo m-2 p-4 ms-4">
             <h3 style="color: #6366F1;">Información general</h3>
-                    <p class="textoInputs">Nombre Completo</p>
-                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese el nombre completo del alumno">
+                    <div class="col-12">
+                        <p class="textoInputs">Nombre Completo</p>
+                        <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese el nombre completo del alumno">
+                    </div>
                     <div class="col-12 pt-3">
                         <p class="textoInputs">Carrera</p>
                     <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example" >
@@ -100,7 +102,7 @@
             </form>
         </div>
     
-        <div class="col-xs col-sm-4 col-md-7 col-lg-7 rounded colorFondo m-2 p-4">
+        <div class="col-9 col-xs-2 col-sm-1 col-md-9 col-xl-7 rounded colorFondo m-2 p-4 ms-4">
         <h3 style="color: #6366F1; padding-bottom: 1%;">Domicilio</h3>
         <div class="col-md-12">
                 <p class="textoInputs">Marque la opción que mejor describa tu situación de vivienda:</p>
@@ -253,19 +255,19 @@
 </section>
 
 <section>
-    <div class="container-auto row p-4 m-2 ">
-        <div class="col-xs-2 col-sm-12 col-md-2 col-lg-11 rounded colorFondo m-2 p-4">
+    <div class="container-auto row ">
+        <div class="col-9 col-xs-2 col-sm-12 col-md-9 col-xl-11 col-lg-11 rounded colorFondo m-2 p-4 ms-4">
         <h3 style="color: #6366F1;">Gastos e ingresos</h3>
         <div class="row-auto">
-            <div class="col mt-3 me-5" style="margin-right: 200%; padding-right: -50%;">
+            <div class="col-12 mt-3 me-5" style="margin-right: 200%; padding-right: -50%;">
                 <p class="textoInputs">¿A cuánto hacienden tus gastos mensuales de manutención?</p>
                 <p class="subtitulo">Lo que pagas de alimentación, transporte, vivienda, servicios médicos, libros y materiales escolares, entretenimiento, etc. (Por favor no incluyas los gastos en colegiatura e inscripciones de la universidad)</p>
                 <input type="text" class="form-control estiloInputs" style="width: 100%;"  id="inputNombre" placeholder="">
             </div>
-            <div class="col mt-3">
+            <div class="col-12 mt-3">
                 <p class="textoInputs">¿Dependes económicamente?</p>
                 <div style="display: flex; justify-content: space-between;">
-                    <div style="width: 50%;">
+                    <div style="width: 100%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault88" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault1">
@@ -273,7 +275,7 @@
                             </label>
                         </div>
                     </div>
-                    <div style="width: 50%;">
+                    <div style="width: 100%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault88" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">
@@ -286,22 +288,22 @@
         </div>
         <div class="line mx-auto mt-5" style="width: 80%;"></div>
         <div class="row-auto">
-            <div class="col mt-3">
+            <div class="col-12 mt-3">
                 <p class="textoInputs">Nombre de la persona de la cuál dependes económicamente:</p>
-                <input type="text" class="form-control estiloInputs" style="width: 47%;"  id="inputNombre" placeholder="">
+                <input type="text" class="form-control estiloInputs" style="width: 100%;"  id="inputNombre" placeholder="">
             </div>
         </div>
         <div class="row-auto">
-            <div class="col mt-3">
+            <div class="col-12 mt-3">
                 <p class="textoInputs">El trabajo de quien dependes es:</p>
                 <div style="display: flex; justify-content: space-between;">
-                    <div style="width: 48%;">
-                        <div class="form-check">
+                    <div style="width: 100%;">
+                        <div class="col-12 form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault1"><p class="subtitulo">Temporal</p></label>
                         </div>
                     </div>
-                    <div style="width: 48%;">
+                    <div style="width: 100%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2"><p class="subtitulo">Permanente</p></label>
@@ -311,15 +313,15 @@
             </div>
             <div class="col mt-3">
                 <p class="textoInputs">Indica su ocupación:</p>
-                <input type="text" class="form-control estiloInputs" style="width: 47%;"  id="inputNombre" placeholder="">
+                <input type="text" class="form-control estiloInputs" style="width: 100%;"  id="inputNombre" placeholder="">
             </div>
         </div>
-        <div class="line mx-auto mt-5" style="width: 80%;"></div>
+        <div class="line mx-auto mt-5" style="width: 100%;"></div>
         <div class="row-auto">
-            <div class="col mt-3">
+            <div class="col-12 mt-3">
                 <p class="textoInputs">¿Solicitas beca alimentaria?</p>
                 <div style="display: flex; justify-content: space-between;">
-                    <div style="width: 48%;">
+                    <div style="width: 100%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault1">
@@ -327,7 +329,7 @@
                             </label>
                         </div>
                     </div>
-                    <div style="width: 80%;">
+                    <div style="width: 100%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">
@@ -343,19 +345,19 @@
 </section>
 
 <section>
-    <div class="container-auto row p-4 m-2">
-        <div class="col-xs-4 col-sm-6 col-md-4 col-lg-6 rounded colorFondo m-2 p-4">
+    <div class="container-auto row">
+        <div class="col-9 col-xs-4 col-sm-6 col-md-9 col-lg-6 rounded colorFondo m-2 p-4 ms-4">
             <h3 style="color: #6366F1;">Transporte</h3>
             <div class="col-md-12 pt-3">
                 <p class="textoInputs">¿Llevas automóvil o motocicleta cotidianamente a la universidad?</p>
                 <div style="display: flex; justify-content: space-between;">
-                    <div style="width: 48%;">
+                    <div style="width: 100%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault1">
                             <p class="subtitulo">Si</p>
                         </div>
                     </div>
-                    <div style="width: 48%;">
+                    <div style="width: 100%;">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault2">
                             <p class="subtitulo">No</p>
@@ -363,18 +365,18 @@
                     </div>
                 </div>
             </div>
-                <div class="col-8">
+                <div class="col-12">
                     <p class="textoInputs">Selecciona tu tipo de vehículo:</p>
-                    <select class="form-select estiloInputs" style="width: 70%;" aria-label="Default select example">
+                    <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
                         <option value="1">Motocicleta</option>
                         <option value="2">Automovil</option>
                     </select>
                 </div>
-                <div class="col-md-4 mt-3">
+                <div class="col-12 mt-3">
                     <p class="textoInputs">¿Qué otros medios utilizas para trasladarte a la universidad?</p>
-                    <div class="col-5 col-md-12 col-xs-4 col-sm-6 col-md-8 col-lg-6">
+                    <div class="col-3 col-md-12 col-xs-4 col-sm-6 col-md-8 col-lg-6">
                         <div style="display: flex; justify-content: space-between;">
-                            <div style="width: 48%;">
+                            <div style="width: 100%;">
                                 <div class="form-check" style="margin-bottom: 30px;">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
@@ -394,7 +396,7 @@
                                     </label>
                                 </div>
                             </div>  
-                            <div style="width: 48%;">
+                            <div style="width: 100%;">
                                 <div class="form-check" style="margin-bottom: 40px;">
                                 </div>
                                 <div class="form-check" style="margin-bottom: 40px">
@@ -402,15 +404,8 @@
                                 <div class="form-check">
                                 </div>
                             </div>    
-                            <div style="width: 48%;">
-                                <div class="form-check" style="margin-bottom: 40px;">
-                                </div>
-                                <div class="form-check" style="margin-bottom: 40px">
-                                </div>
-                                <div class="form-check">
-                                </div>
-                            </div>                        
-                            <div style="width: 48%;">
+                       
+                            <div style="width: 100%;">
                                 <div class="form-check" style="margin-bottom: 30px;">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
@@ -430,7 +425,7 @@
                                     </label>
                                   </div>
                             </div>
-                            <div style="width: 48%;">
+                            <div style="width: 100%;">
                                 <div class="form-check" style="margin-bottom: 40px;">
                                 </div>
                                 <div class="form-check" style="margin-bottom: 40px">
@@ -438,15 +433,7 @@
                                 <div class="form-check">
                                 </div>
                             </div>    
-                            <div style="width: 48%;">
-                                <div class="form-check" style="margin-bottom: 40px;">
-                                </div>
-                                <div class="form-check" style="margin-bottom: 40px">
-                                </div>
-                                <div class="form-check">
-                                </div>
-                            </div> 
-                            <div class="col-md-8" style="width: 48%;">
+                            <div class="col-md-8" style="width: 100%;">
                                 <div class="form-check" style="margin-bottom: 30px;">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
@@ -464,7 +451,7 @@
                 </div> 
                 </div>
         </div>
-        <div class="col-xs-4 col-sm-6 col-md-1 col-lg-5 rounded colorFondo m-2 p-4">
+        <div class="col-9 col-xs-4 col-sm-6 col-md-9 col-lg-5 rounded colorFondo m-2 p-4 ms-4">
             <h3 style="color: #6366F1; padding-bottom: 2%;">Información complementaria</h3>
             <div class="col-md-12" style="color: #6366F1; ">
                     <p class="textoInputs">¿Eres hijo o nieto de comunero de Ixtlán de Juárez?</p>
@@ -536,7 +523,7 @@
                 </div>
         </div> 
             <div style="display: flex; justify-content: space-between; padding-top: 3%;">
-                <div style="width: 90%;">
+                <div style="width: 100%;">
                     <p class="textoInputs">Además del idioma español, ¿qué otro idioma, lenguaje o dialecto hablas?</p>
                     <input type="text" class="form-control estiloInputs" style="width: 100%;"  id="inputNombre" placeholder="">
                 </div>
