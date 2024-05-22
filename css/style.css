@@ -2,6 +2,16 @@ body {
     overflow-x: hidden;
 }
 
+/* COLORES */
+.colorMoradoFuerte{
+    
+}
+
+.colorMorado{
+    color: #818CF8;
+}
+/* COLORES */
+
 .fontPoppins {
     font-family: 'Poppins';
 }
@@ -9,7 +19,7 @@ body {
 .titulo{
     font-weight: 500;
     font-size: 40px;
-    line-height: 60px;
+    line-height: 50px;
     color: #4F46E5;
 }
 
@@ -337,8 +347,6 @@ footer hr {
     background-color: #F5F5F5; 
 }
 
-.colorMorado{
-    color: #818CF8;
-}
+
 
 /*--------------- Tabla Administrar Alumnos  ---------------*/
