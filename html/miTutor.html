@@ -65,8 +65,12 @@
                     </div>
                 </div>
             </div>
+            <div class="col mt-3">
+                    <p class="textoInputs">Indica su ocupación:</p>
+                    <input type="text" class="form-control estiloInputs" style="width: 50%;"  id="inputNombre" placeholder="">
+                </div>
             <div class="mt-4" style="color: #6366F1;">
-                <p>¿Es trabajador de la UNSIJ o SUNEO?</p>
+                <p class="textoInputs">¿Es trabajador de la UNSIJ o SUNEO?</p>
                 <div class="mt-3">
                     <input type="radio" class="input-outline-primary ms-4" id="apoyoSi" name="domicilio" style="color: #6366F1;">
                     <label for="apoyoSi" style="color:#6C757D;" class="me-5">Si</label>
@@ -74,6 +78,7 @@
                     <label for="apoyoNo" style="color:#6C757D;" class="mb-5">No</label>
                 </div>
             </div>
+            
             </div>
             <div class="col-10 col-xs-2 col-sm-1 col-md-9 col-xl-6  rounded colorFondo m-2 p-4 ms-4">
                 <h3 style="color: #6366F1;">Información general</h3>
@@ -166,6 +171,67 @@
                     </div>
                 </div>
          </div>
+         <div class="container-auto row ">
+            <!--GASTOS E INGRESOS-->
+            <div class="col-10 col-xs-2 col-sm-12 col-md-11 col-xl-11 col-lg-11 rounded colorFondo m-2 p-4 ms-4">
+            <h3 style="color: #6366F1;">Gastos e ingresos</h3>
+            <div class="row-auto">
+                <div class="col-12 mt-3 me-5" style="margin-right: 200%; padding-right: -50%;">
+                    <p class="textoInputs">¿A cuánto hacienden tus gastos mensuales de manutención?</p>
+                    <p class="subtitulo">Lo que pagas de alimentación, transporte, vivienda, servicios médicos, libros y materiales escolares, entretenimiento, etc. (Por favor no incluyas los gastos en colegiatura e inscripciones de la universidad)</p>
+                    <input type="text" class="form-control estiloInputs" style="width: 50%;"  id="inputNombre" placeholder="">
+                </div>
+                <div class="col-12 mt-3">
+                    <p class="textoInputs">¿Dependes económicamente?</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 100%;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault88" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    <p class="subtitulo">Si</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div style="width: 100%;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault88" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    <p class="subtitulo">No</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line mx-auto mt-5" style="width: 80%;"></div>
+            <div class="row-auto">
+                <div class="col-12 mt-3">
+                    <p class="textoInputs">Nombre de la persona de la cuál dependes económicamente:</p>
+                    <input type="text" class="form-control estiloInputs" style="width: 50%;"  id="inputNombre" placeholder="">
+                </div>
+            </div>
+            <div class="row-auto">
+                <div class="col-12 mt-3">
+                    <p class="textoInputs">El trabajo de quien dependes es:</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 100%;">
+                            <div class="col-12 form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault1"><p class="subtitulo">Temporal</p></label>
+                            </div>
+                        </div>
+                        <div style="width: 100%;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2"><p class="subtitulo">Permanente</p></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
     </main>
     <footer id="footer"></footer>
     <script src="../javaScript.js/funcionamiento.js"></script>
