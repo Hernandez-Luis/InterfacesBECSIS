@@ -19,16 +19,16 @@
                     <button class="btn camino" >Inicio</button>
                 </a>
                 <a href="menuSolicitarBeca.html" style="text-decoration: none;">
-                    <button class="btn camino">Solicitud</button> 
+                    <button class="btn camino">Estudio socioeconomico</button> 
                 </a>
                 <a href="miTutor.html" style="text-decoration: none;">
-                    <button class="btn btn-primary camino" style="background-color: #4F46E5; ">Mi tutor</button>
+                    <button class="btn btn-primary camino" style="background-color: #4F46E5; ">Dependiente economico</button>
                 </a>   
             </ol>
         </div>
     </div>
     <main>
-        <h1 class="titulo" style="text-align:left; margin-left: 1.6cm;"> MI TUTOR</h1>
+        <h1 class="titulo" style="text-align:left; margin-left: 1.6cm;">DEPENDIENTE ECONOMICO </h1>
         <p class="subtitulo m-4">Datos del padre, madre o tutor o familiar más cercano (preferiblemente, del que se depende económicamente) </p>
         <div class="container-auto row ">
             <div class="col-10 col-xs-2 col-sm-1 col-md-9 col-xl-5  rounded colorFondo m-2 p-4 ms-4">
@@ -49,19 +49,15 @@
                 </select>
             </div>
             <div class="col-12 pt-3">
-                <div style="display: flex; justify-content: space-between;">
+                <div class="d-flex">
                     
-                    <div style="width: 100%;">
+                    <div style="width: 100%;" class="me-4">
                         <p class="textoInputs">Correo electronico</p>
-                        <div class="form-check">
-                            <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese su correo electronico">
-                        </div>
+                        <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese su correo electronico">
                     </div>
                     <div style="width: 100%;">
                         <p class="textoInputs">Telefono</p>
-                        <div class="form-check">
-                            <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese N° Telefono">
-                        </div>
+                        <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="Ingrese N° Telefono">
                     </div>
                 </div>
             </div>
@@ -81,7 +77,7 @@
             
             </div>
             <div class="col-10 col-xs-2 col-sm-1 col-md-9 col-xl-6  rounded colorFondo m-2 p-4 ms-4">
-                <h3 style="color: #6366F1;">Información general</h3>
+                <h3 style="color: #6366F1;">Domicilio</h3>
                 <p class="subtitulo">Indica la dirección de la persona de quien se depende económicamente, si éste es el caso, o de lo contrario, a la persona que se pueda localizar para aclaraciones.</p>
                 <div class="mt-1" style="color: #6366F1;" >
                     <p>¿El domicilio de tu tutor coincide con el que te encuentras actualmente?</p>
@@ -105,8 +101,29 @@
                             </select>
                         </div>
                         <div class="col">
+                            <p class="textoInputs">Region</p>
+                            <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                                <option selected class="subtitulo">Elige una opción</option>
+                                <option value="1" class="subtitulo">Región 1</option>
+                                <option value="2" class="subtitulo">Región 2</option>
+                                <option value="3" class="subtitulo">Región 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <p class="textoInputs">Distrito</p>
+                            <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                                <option selected class="subtitulo">Elige una opción</option>
+                                <option value="1" class="subtitulo">Distrito 1</option>
+                                <option value="2" class="subtitulo">Distrito 2</option>
+                                <option value="3" class="subtitulo">Distrito 3</option>
+                            </select>
+                        </div>
+                        <div class="col">
                             <p class="textoInputs">Municipio</p>
                             <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                                
                                 <option selected class="subtitulo">Elige una opción</option>
                                 <option value="1" class="subtitulo">Municipio 1</option>
                                 <option value="2" class="subtitulo">Municipio 2</option>
@@ -125,32 +142,12 @@
                             </select>
                         </div>
                         <div class="col">
-                            <p class="textoInputs">Colonia o barrio</p>
+                            <p class="textoInputs">Colonia</p>
                             <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
                                 <option selected class="subtitulo">Elige una opción</option>
                                 <option value="1" class="subtitulo">Colonia o barrio 1</option>
                                 <option value="2" class="subtitulo">Colonia o barrio 2</option>
                                 <option value="3" class="subtitulo">Colonia o barrio 3</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col">
-                            <p class="textoInputs">Distrito</p>
-                            <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
-                                <option selected class="subtitulo">Elige una opción</option>
-                                <option value="1" class="subtitulo">Distrito 1</option>
-                                <option value="2" class="subtitulo">Distrito 2</option>
-                                <option value="3" class="subtitulo">Distrito 3</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <p class="textoInputs">Región</p>
-                            <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
-                                <option selected class="subtitulo">Elige una opción</option>
-                                <option value="1" class="subtitulo">Región 1</option>
-                                <option value="2" class="subtitulo">Región 2</option>
-                                <option value="3" class="subtitulo">Región 3</option>
                             </select>
                         </div>
                     </div>
