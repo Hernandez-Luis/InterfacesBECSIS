@@ -273,37 +273,14 @@
             </div>
 
             <div class="mt-4 col">
-                <p class="textoInputs">Tipo de conexión</p>
-                <div class="row">
-                    <div class="col-6 me-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="agua">
-                            <label class="form-check-label subtitulo" for="agua">
-                                Cable
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="telefono">
-                            <label class="form-check-label subtitulo" for="telefono">
-                                Satelite
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col me-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="luz">
-                            <label class="form-check-label subtitulo" for="luz">
-                                WiFi
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="otros">
-                            <label class="form-check-label subtitulo" for="otros">
-                                DLS
-                            </label>
-                        </div>
-                    </div>
-                </div>
+                <p class="textoInputs">Tipo de conexion:</p>
+                <select class="form-select estiloInputs" style="width: 50%;"
+                    aria-label="Default select example">
+                    <option selected class="subtitulo">Cable</option>
+                    <option value="1" class="subtitulo">Satelite</option>
+                    <option value="2" class="subtitulo">WiFi</option>
+                    <option value="3" class="subtitulo">DLS</option>
+                </select>
             </div>
         </div>
     </div>
@@ -536,7 +513,8 @@
         </div>
     </div>
     <div class="d-flex justify-content-center mt-5">
-        <button class="btn btn-outline-primary hBtn mt-3 estiloBoton">Guardar</button>
+        <button class="btn btn-outline-primary hBtn mt-3 estiloBoton me-5">Guardar</button>
+        <button class="btn btn-outline-success mt-3 ">Enviar</button>
     </div>
         <footer id="footer"></footer>
         <script src="../javaScript.js/funcionamiento.js"></script>

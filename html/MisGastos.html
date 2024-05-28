@@ -90,6 +90,10 @@
                             <p>IMN <span style="color: #6C757D;">(Ingreso Mensual Neto)</span></p>
                             <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="inputNombre" placeholder="">
                         </div>
+
+                        <div class="col-sm-6 col-xl-4">
+                            <p>Ingreso Total: <span style="color: #6C757D;">$200.5</span></p>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -110,11 +114,21 @@
                     </div>
 
                     <div class="col-sm-6">
-                        <p class="textoInputs" style="color: #6C757D;">Pago Agosto - Septiembre</p>
+                        <p class="textoInputs" style="color: #6C757D;">Fecha inicial</p>
                         <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 50%;" id="inputNombre" placeholder="">
                     </div>
                     
                     <div class="col-sm-6">
+                        <p class="textoInputs" style="color: #6C757D;">Fecha final</p>
+                        <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 50%;" id="inputNombre" placeholder="">
+                    </div>
+
+                    <div class="col-sm-6 mt-3">
+                        <p class="textoInputs" style="color: #6C757D;">Pago Agosto - Septiembre</p>
+                        <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 50%;" id="inputNombre" placeholder="">
+                    </div>
+                    
+                    <div class="col-sm-6 mt-3">
                         <p class="textoInputs" style="color: #6C757D;">Pago mensual promedio</p>
                         <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 50%;" id="inputNombre" placeholder="">
                     </div>
@@ -171,19 +185,20 @@
                         <p class="fontPoppins mt-3 textoInputs">Pago mensual promedio: <span style="color: #6C757D;">$200.50</span></p>
                     </div>
                 </div>
-                
             </div>
-
-            <div class="colorFondo mt-1 rounded p-3" style="width: 40%;">
-                <label for="observacionesGenerales" style="color: #6366F1;">
+            
+            <div class="colorFondo rounded p-3 mt-1" style="width: 40%;">
+                <p>Dentro de este espacio, puedes agregar cualquier aclaración sobre algún documento o dato que necesite una explicación adicional para facilitar la comprensión de los revisores.</p>
+                <label class="mb-2" for="observacionesGenerales" style="color: #6366F1;">
                     Observaciones
                 </label>
-                <textarea rows="4" cols="50" class="form-control estiloInputs" style="width: 100%;  padding-bottom: 50%;" placeholder="Escribe aquí tu comentario..."></textarea>
+                <textarea rows="7" cols="10" class="form-control estiloInputs" style="width: 100%;" placeholder="Escribe aquí tu comentario..."></textarea>
             </div>
         </div>
 
-        <div class="d-flex justify-content-center mt-4">
-            <button href="" class="btn hBtn mt-3  estiloBoton" style="border-color: #4F46E5;">Guardar</button>
+        <div class="d-flex justify-content-center mt-5">
+            <button class="btn btn-outline-primary hBtn mt-3 estiloBoton me-5">Guardar</button>
+            <button class="btn btn-outline-success mt-3 ">Enviar</button>
         </div>
     </section>
 
