@@ -20,7 +20,7 @@
             <ol class="colorFondo breadcrumb bread-primary ">
                 <a href="../html/menuAlumno.html"><button class="btn camino" id="botonInicio">Inicio</button></a>
                 <a href="../html/menuSolicitarBeca.html" style="text-decoration: none;"><button class="btn camino"
-                        id="botonSolicitar"> Solicitar beca colegiatura</button></a>
+                        id="botonSolicitar">Estudio socioeconomico</button></a>
                 <button class="btn btn-primary camino localizacion">Mi familia</button>
             </ol>
         </div>
@@ -30,13 +30,13 @@
     <div class="row ms-5 me-5">
         <div class="col-15 p-3 rounded colorFondo">
             <h3 style="color: #6366F1;">Domicilio</h3>
-            <div class="mt-4" style="color: #6366F1;">
-                ¿El domicilio de tu tutor coincide con el que te encuentras actualmente?
+            <div class="mt-4">
+                <p class="textoInputs">¿El domicilio de tu tutor coincide con el que te encuentras actualmente? </p>
             </div>
             <div class="mt-3">
                 <input type="radio" class="input-outline-primary ms-4" id="domicilioSi" name="domicilio"
                     style="color: #6366F1;">
-                <label for="domicilioSi" style="color: #6366F1;" class="me-5">Si</label>
+                <label for="domicilioSi" style="color: #6366F1;" class="me-5 textoInputs">Si</label>
                 <input type="radio" class="input-outline-primary" id="domicilioNo" name="domicilio"
                     style="color: #6366F1;">
                 <label for="domicilioNo" style="color: #6366F1;">No</label>
@@ -61,25 +61,18 @@
                     </select>
                 </div>
                 <div class="col">
-                    <p class="textoInputs">Colonia</p>
-                    <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
-                        <option selected class="subtitulo">Elige una opción</option>
-                        <option value="1" class="subtitulo">Colonia o barrio 1</option>
-                        <option value="2" class="subtitulo">Colonia o barrio 2</option>
-                        <option value="3" class="subtitulo">Colonia o barrio 3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col">
                     <p class="textoInputs">Distrito</p>
                     <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                        
+
                         <option selected class="subtitulo">Elige una opción</option>
                         <option value="1" class="subtitulo">Distrito 1</option>
                         <option value="2" class="subtitulo">Distrito 2</option>
                         <option value="3" class="subtitulo">Distrito 3</option>
                     </select>
                 </div>
+            </div>
+            <div class="row mt-4">
                 <div class="col">
                     <p class="textoInputs">Municipio</p>
                     <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
@@ -98,7 +91,31 @@
                         <option value="3" class="subtitulo">Localidad 3</option>
                     </select>
                 </div>
+                <div class="col">
+                    <p class="textoInputs">Colonia</p>
+                    <select class="form-select estiloInputs" style="width: 96%;" aria-label="Default select example">
+                        <option selected class="subtitulo">Elige una opción</option>
+                        <option value="1" class="subtitulo">Colonia o barrio 1</option>
+                        <option value="2" class="subtitulo">Colonia o barrio 2</option>
+                        <option value="3" class="subtitulo">Colonia o barrio 3</option>
+                    </select>
+                </div>
             </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <p class="textoInputs">Calle</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 60%;">
+                </div>
+                <div class="col-3">
+                    <p class="textoInputs">Numero</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 50%;">
+                </div>
+                <div class="col-6">
+                    <p class="textoInputs">Codigo postal</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 30%;">
+                </div>
+            </div>
+            
         </div>
     </div>
 
@@ -256,37 +273,14 @@
             </div>
 
             <div class="mt-4 col">
-                <p class="textoInputs">Tipo de conexión</p>
-                <div class="row">
-                    <div class="col-6 me-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="agua">
-                            <label class="form-check-label subtitulo" for="agua">
-                                Cable
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="telefono">
-                            <label class="form-check-label subtitulo" for="telefono">
-                                Satelite
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col me-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="luz">
-                            <label class="form-check-label subtitulo" for="luz">
-                                WiFi
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="otros">
-                            <label class="form-check-label subtitulo" for="otros">
-                                DLS
-                            </label>
-                        </div>
-                    </div>
-                </div>
+                <p class="textoInputs">Tipo de conexion:</p>
+                <select class="form-select estiloInputs" style="width: 50%;"
+                    aria-label="Default select example">
+                    <option selected class="subtitulo">Cable</option>
+                    <option value="1" class="subtitulo">Satelite</option>
+                    <option value="2" class="subtitulo">WiFi</option>
+                    <option value="3" class="subtitulo">DLS</option>
+                </select>
             </div>
         </div>
     </div>
@@ -319,19 +313,18 @@
         <div class="row mt-3">
             <div style="background-color: white; border-color: #6366F1; border-style: solid; border-width: .5px; width: 98.6%;"
                 class="ms-2 rounded ps-3 pe-3 pb-3 row mt-2">
-                <div class="col-12 col-sm-8 mt-3 col-lg-4 col-xl-4">
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-4">
                     <p class="textoInputs">Nombre completo:</p>
                     <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
                         style="width: 100%;" id="inputNombreDep"
                         placeholder="Ingrese el nombre de persona dependiente ">
                 </div>
-                <div class="col-12 col-sm-4 mt-3 col-lg-4 col-xl-1">
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-1">
                     <p class="textoInputs">Edad:</p>
                     <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
                         style="width: 100%;" id="inputNombre" placeholder="">
                 </div>
-
-                <div class="col-12 col-sm-4 mt-3 col-lg-4 col-xl-2">
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-1">
                     <p class="textoInputs">Grado:</p>
                     <select class="form-select estiloInputs" style="width: 104%;" aria-label="Default select example">
                         <option value="1" class="subtitulo">Primaria</option>
@@ -341,29 +334,77 @@
                         <option value="5" class="subtitulo">Postgrado</option>
                     </select>
                 </div>
-                <div class="col-12 col-sm-8 col-lg-6 mt-3 col-xl-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3 col-xl-2">
                     <p class="textoInputs">Nombre de su institución:</p>
                     <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
                         style="width: 100%;" id="inputInst" placeholder="">
                 </div>
-                <div class="col-12 mt-3 col-lg-6 col-xl-2">
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-2">
+                    <p class="textoInputs">Tipo comprobante:</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
+                        style="width: 100%;" id="inputNombre" placeholder="">
+                </div>
+                <div class="col-12 mt-3 col-sm-6 col-lg-4 col-md-6 col-xl-2">
+                    <p class="textoInputs">Subir comprobante:</p>
+                    <input id="reciboLuz" type="file" class="ms-1 w-100 form-control">
+                </div>
+
+
+
+                <div class="line mx-auto mb-2 mt-4" style="width: 68%;"></div>
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-4">
+                    <p class="textoInputs">Nombre completo:</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
+                        style="width: 100%;" id="inputNombreDep"
+                        placeholder="Ingrese el nombre de persona dependiente ">
+                </div>
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-1">
+                    <p class="textoInputs">Edad:</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
+                        style="width: 100%;" id="inputNombre" placeholder="">
+                </div>
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-1">
+                    <p class="textoInputs">Grado:</p>
+                    <select class="form-select estiloInputs" style="width: 104%;" aria-label="Default select example">
+                        <option value="1" class="subtitulo">Primaria</option>
+                        <option value="2" class="subtitulo">Secundaria</option>
+                        <option value="3" class="subtitulo">Bachillerato</option>
+                        <option value="4" class="subtitulo">Universidad</option>
+                        <option value="5" class="subtitulo">Postgrado</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3 col-xl-2">
+                    <p class="textoInputs">Nombre de su institución:</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
+                        style="width: 100%;" id="inputInst" placeholder="">
+                </div>
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-2">
+                    <p class="textoInputs">Tipo comprobante:</p>
+                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
+                        style="width: 100%;" id="inputNombre" placeholder="">
+                </div>
+                <div class="col-12 mt-3 col-sm-6 col-lg-4 col-md-6 col-xl-2">
                     <p class="textoInputs">Subir comprobante:</p>
                     <input id="reciboLuz" type="file" class="ms-1 w-100 form-control">
                 </div>
                 <div class="line mx-auto mb-2 mt-4" style="width: 68%;"></div>
-                <div class="col-12 col-sm-8 mt-3 col-lg-4 col-xl-4">
+
+
+
+                
+                
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-4">
                     <p class="textoInputs">Nombre completo:</p>
                     <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
                         style="width: 100%;" id="inputNombreDep"
                         placeholder="Ingrese el nombre de persona dependiente ">
                 </div>
-                <div class="col-12 col-sm-4 mt-3 col-lg-4 col-xl-1">
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-1">
                     <p class="textoInputs">Edad:</p>
                     <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
                         style="width: 100%;" id="inputNombre" placeholder="">
                 </div>
-
-                <div class="col-12 col-sm-4 mt-3 col-lg-4 col-xl-2">
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-1">
                     <p class="textoInputs">Grado:</p>
                     <select class="form-select estiloInputs" style="width: 104%;" aria-label="Default select example">
                         <option value="1" class="subtitulo">Primaria</option>
@@ -373,44 +414,17 @@
                         <option value="5" class="subtitulo">Postgrado</option>
                     </select>
                 </div>
-                <div class="col-12 col-sm-8 col-lg-6 mt-3 col-xl-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3 col-xl-2">
                     <p class="textoInputs">Nombre de su institución:</p>
                     <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
                         style="width: 100%;" id="inputInst" placeholder="">
                 </div>
-                <div class="col-12 mt-3 col-lg-6 col-xl-2">
-                    <p class="textoInputs">Subir comprobante:</p>
-                    <input id="reciboLuz" type="file" class="ms-1 w-100 form-control">
-                </div>
-                <div class="line mx-auto mb-2 mt-4" style="width: 68%;"></div>
-                <div class="col-12 col-sm-8 mt-3 col-lg-4 col-xl-4">
-                    <p class="textoInputs">Nombre completo:</p>
-                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
-                        style="width: 100%;" id="inputNombreDep"
-                        placeholder="Ingrese el nombre de persona dependiente ">
-                </div>
-                <div class="col-12 col-sm-4 mt-3 col-lg-4 col-xl-1">
-                    <p class="textoInputs">Edad:</p>
+                <div class="col-12 col-sm-6 mt-3 col-md-6 col-lg-4 col-xl-2">
+                    <p class="textoInputs">Tipo comprobante:</p>
                     <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
                         style="width: 100%;" id="inputNombre" placeholder="">
                 </div>
-
-                <div class="col-12 col-sm-4 mt-3 col-lg-4 col-xl-2">
-                    <p class="textoInputs">Grado:</p>
-                    <select class="form-select estiloInputs" style="width: 104%;" aria-label="Default select example">
-                        <option value="1" class="subtitulo">Primaria</option>
-                        <option value="2" class="subtitulo">Secundaria</option>
-                        <option value="3" class="subtitulo">Bachillerato</option>
-                        <option value="4" class="subtitulo">Universidad</option>
-                        <option value="5" class="subtitulo">Postgrado</option>
-                    </select>
-                </div>
-                <div class="col-12 col-sm-8 col-lg-6 mt-3 col-xl-3">
-                    <p class="textoInputs">Nombre de su institución:</p>
-                    <input type="text" class="form-control estiloInputs" class="estiloInputs rounded"
-                        style="width: 100%;" id="inputInst" placeholder="">
-                </div>
-                <div class="col-12 mt-3 col-lg-6 col-xl-2">
+                <div class="col-12 mt-3 col-sm-6 col-lg-4 col-md-6 col-xl-2">
                     <p class="textoInputs">Subir comprobante:</p>
                     <input id="reciboLuz" type="file" class="ms-1 w-100 form-control">
                 </div>
@@ -499,7 +513,8 @@
         </div>
     </div>
     <div class="d-flex justify-content-center mt-5">
-        <button class="btn btn-outline-primary hBtn mt-3 estiloBoton">Guardar</button>
+        <button class="btn btn-outline-primary hBtn mt-3 estiloBoton me-5">Guardar</button>
+        <button class="btn btn-outline-success mt-3 ">Enviar</button>
     </div>
         <footer id="footer"></footer>
         <script src="../javaScript.js/funcionamiento.js"></script>
