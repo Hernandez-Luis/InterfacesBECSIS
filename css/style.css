@@ -342,3 +342,8 @@ footer hr {
 
 
 /*--------------- Tabla Administrar Alumnos  ---------------*/
+.iconoAdminAlumnos {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+/*--------------- Tabla Administrar Alumnos  ---------------*/
