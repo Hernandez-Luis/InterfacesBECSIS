@@ -29,7 +29,7 @@
     <h1 class="titulo ps-5" style="font: bold; font-weight: 660;">MI FAMILIA</h1>
     <div class="row ms-5 me-5">
         <div class="col-15 p-3 rounded colorFondo">
-            <h3 style="color: #6366F1;">Domicilio</h3>
+            <h3 style="color: #6366F1; padding-bottom: 1%;">Domicilio</h3>
             <div class="mt-4">
                 <p class="textoInputs">¿El domicilio de tu tutor coincide con el que te encuentras actualmente? </p>
             </div>
@@ -274,36 +274,12 @@
 
             <div class="mt-4 col">
                 <p class="textoInputs">Tipo de conexión</p>
-                <div class="row">
-                    <div class="col-6 me-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="agua">
-                            <label class="form-check-label subtitulo" for="agua">
-                                Cable
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="telefono">
-                            <label class="form-check-label subtitulo" for="telefono">
-                                Satelite
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col me-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="luz">
-                            <label class="form-check-label subtitulo" for="luz">
-                                WiFi
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="otros">
-                            <label class="form-check-label subtitulo" for="otros">
-                                DLS
-                            </label>
-                        </div>
-                    </div>
-                </div>
+                <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                    <option value="1" class="subtitulo">Cable</option>
+                    <option value="2" class="subtitulo">Satelite</option>
+                    <option value="3" class="subtitulo">WiFi</option>
+                    <option value="3" class="subtitulo">DLS</option>
+                </select>
             </div>
         </div>
     </div>
