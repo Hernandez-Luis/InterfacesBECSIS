@@ -1,65 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Socioeconómico</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>SUB MENU REVISOR</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <style>
+        .section {
+            background-color: #F5F5F5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+        }
+        .underline-input {
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+    </style>
 </head>
-<body > 
-    <nav id="navRevisor"></nav>
+<body>
+    <div class="container mt-5">
+        <form>
+            <h3 class="titulo" style="font-size: 30px; font: bold; font-weight: 660;">DATOS GENERALES DEL ALUMNO(A)</h3>
+            <div class="colorFondo p-3 mb-4">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-2 col-xxl-3">
+                            <p style="font-weight: bold;">Apellido paterno: <span class="subtitulo">Hernandez</span></p>
+                        </div>
+                        <div class="col-md-2 col-xxl-3">
+                            <p style="font-weight: bold;">Apellido materno: <span class="subtitulo">Ramirez</span></p>
+                        </div>
+                        <div class="col-md-2 col-xxl-2">
+                            <p style="font-weight: bold;">Nombre: <span class="subtitulo">Luis Alberto</span></p>
+                        </div>
+                        <div class="col-md-2 col-xxl-2">
+                            <p style="font-weight: bold;">Sexo: <span class="subtitulo">Hombre</span></p>
+                        </div>
+                        <div class="col-md-2 col-xxl-2">
+                            <p style="font-weight: bold;">Estado civil: <span class="subtitulo">Soltero</span></p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-3 col-xxl-4">
+                            <p style="font-weight: bold;">Carrera: <span class="subtitulo">Licenciatura en Informatica</span></p>
+                        </div>
+                        <div class="col-md-3 col-xxl-2">
+                            <p style="font-weight: bold;">Telefono: <span class="subtitulo">123-456-7890</span></p>
+                        </div>
+                        <div class="col-md-3  col-xxl-3">
+                            <p style="font-weight: bold;">Correo electronico: <span class="subtitulo">correo@gmail.com</span></p>
+                        </div>
+                        <div class="col-md-3 col-xxl-3">
+                            <p style="font-weight: bold;">Idiomas: <span class="subtitulo">Mixe, Zapoteco, Ingles</span></p>
+                        </div>
+                    </div>
+                    <h5 class="titulo d-flex justify-content-center" style="font-size: 20px; font: bold; font-weight: 660;">DOMICILIO ACTUAL DE SU FAMILIA</h5>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p style="font-weight: bold;">Region: <span class="subtitulo">Metropolitana</span></p>
+                        </div>
+                        <div class="col-md-2">
+                            <p style="font-weight: bold;">Distrito: <span class="subtitulo">Villa Alta</span></p>
+                        </div>
+                        <div class="col-md-2">
+                            <p style="font-weight: bold;">Municipio: <span class="subtitulo">Ixtlan de Juarez</span></p>
+                        </div>
+                        <div class="col-md-2">
+                            <p style="font-weight: bold;">Localidad: <span class="subtitulo">Ixtlan de Juarez</span></p>
+                        </div>
+                        <div class="col-md-2">
+                            <p style="font-weight: bold;">Estado: <span class="subtitulo">Oaxaca</span></p>
+                        </div>
+                        <div class="col-md-2">
+                            <p style="font-weight: bold;">Telefono: <span class="subtitulo">123-456-7890</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="container m-7 " style="margin-top:1cm;" >
-        <div class="row" >
-            <ol class="p-1 colorFondo breadcrumb bread-primary ">
-                <a href="MenuRevisor.html" style="text-decoration: none;">
-                    <button  class="btn camino" >Inicio</button>
-                </a>
-                
-                <a href="../html/SubMenuRevisor.html" style="text-decoration: none;">
-                    <button href="#" class="btn btn-primary camino" style="background-color: #4F46E5; ">Solicitudes</button>
-                </a>   
-            </ol>
-        </div>
+            <h3 class="titulo" style="font-size: 30px; font: bold; font-weight: 660;">INFORMACIÓN SOCIO ECONÓMICA DEL ALUMNO(A)</h3>
+            <div class="section">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12 col-xxl-6">
+                            <p style="font-weight: bold;">Nombre de quien depende economicamente: <span class="subtitulo">Efren David Jimenez Martinez</span></p>
+                        </div>
+                        <div class="col-md-6 col-xxl-3">
+                            <p style="font-weight: bold;">Centro de trabajo en el que labora: <span class="subtitulo">Google</span></p>
+                        </div>
+                        <div class="col-md-6 col-xxl-3">
+                            <p style="font-weight: bold;">Ingreso mensual que recibe: $<span class="subtitulo">12,000.00</span></p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <p style="font-weight: bold;">Domicilio del lugar donde labora: <span class="subtitulo">New York</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p style="font-weight: bold;">Telefono del lugar donde labora: <span class="subtitulo">123-456-7890</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="titulo" style="font-size: 30px; font: bold; font-weight: 660;">INFORMACIÓN SOCIO ECONÓMICA DE LA FAMILIA</h3>
+            <div class="section">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4 col-xxl-3">
+                            <p style="font-weight: bold;">Centro de trabajo en el que labora: <span class="subtitulo">Google</span></p>
+                        </div>
+                        <div class="col-md-3 col-xxl-3">
+                            <p style="font-weight: bold;">Ingreso mensual promedio: $<span class="subtitulo">1,000.00</span></p>
+                        </div>
+                        <div class="col-md-5 col-xxl-6">
+                            <p style="font-weight: bold;">Numero de personas que dependen del ingreso mensual mencionado: $<span class="subtitulo">1,000.00</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xxl-2">
+                            <p style="font-weight: bold;">Alimentación: $<span class="subtitulo">12</span></p>
+                        </div>
+                        <div class="col-md-2 col-xxl-2">
+                            <p style="font-weight: bold;">Renta: $<span>12</span class="subtitulo"></p>
+                        </div>
+                        <div class="col-md-4 col-xxl-2">
+                            <p style="font-weight: bold;">Servicios (luz y agua): $<span class="subtitulo">12</span></p>
+                        </div>
+                        <div class="col-md-3 col-xxl-2">
+                            <p style="font-weight: bold;">Gastos escolares: $<span class="subtitulo">12</span></p>
+                        </div>
+                        <div class="col-md-4 col-xxl-1">
+                            <p style="font-weight: bold;">Ropa: $<span class="subtitulo">12</span></p>
+                        </div>
+                        <div class="col-md-4 col-xxl-2">
+                            <p style="font-weight: bold;">Transporte: $<span class="subtitulo">12</span></p>
+                        </div>
+                        <div class="col-md-4 col-xxl-1">
+                            <p style="font-weight: bold;">Otros: $<span class="subtitulo">12</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="font-weight: bold;">Total: $<span class="subtitulo">12</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-
-    <section>
-
-        <div class="container">
-
-            <div class="row">
-
-                <h1 class="fontPoppins titulo" style="text-align: center;">Solicitudes beca colegiatura</h1>
-
-                <img src="../img/submenusolicitudes.png" style="width: 35%; height: 35%; margin-left:33.8%;" alt="">
-
-            </div>
-
-            <div class="row justify-content-md-center mt-5">
-                <div class="col-auto">
-                    <a href="../html/todasSolicitudes.html"><button type="button" class="btn btn-outline-primary cboton titulo" style="font-size: 20px;">Todas las solicitudes</button></a>
-                </div>
-                <div class="col-auto">
-                    <a href="../html/solicitudesSinRevisar.html"><button type="button" class="btn btn-outline-primary cboton titulo" style="font-size: 20px;">Sin revisar</button></a>
-                </div>
-                <div class="col-auto">
-                    <a href="../html/solicitudesPendientes.html"><button type="button" class="btn btn-outline-primary cboton titulo" style="font-size: 20px;">Pendientes</button></a>
-                </div>
-                <div class="col-auto">
-                    <a href="../html/exportarSolicitudes.html"><button type="button" class="btn btn-outline-primary cboton titulo" style="font-size: 20px;">Finalizados</button></a>
-                </div>
-                
-            </div>
-
-        </div>
-        
-    </section>
-
-
-    <footer id="footer"></footer>
-    <script src="../javaScript.js/funcionamiento.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
