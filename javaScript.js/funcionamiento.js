@@ -55,3 +55,21 @@ document.addEventListener("DOMContentLoaded", function () {
             footerContainer.innerHTML = html;
         });
 });
+
+
+// Funcionamiento calendario
+$(document).ready(function () {
+    $('#start').datepicker({
+        format: 'dd/mm/yyyy',
+        todayHighlight: true,
+        autoclose: true,
+        orientation: "bottom auto"
+    });
+
+    $('#end').datepicker({
+        format: 'dd/mm/yyyy',
+        todayHighlight: true,
+        autoclose: true,
+        orientation: "bottom auto"
+    });
+});

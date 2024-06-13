@@ -14,14 +14,14 @@
         <div class="row">
             <ol class="p-1 colorFondo breadcrumb bread-primary ">
                 <a href="menuAdministrador.html"><button class="btn camino" id="botonInicio">Inicio</button></a>
-                <a href="../html/administrarAlumno.html"><button class="btn camino" id="botonSolicitudes">Alumnos</button></a>
-                <a href="PanelAgregarAlumnos.html"><button class="btn btn-primary camino localizacion" id="solicitudesCarrera">Agregar</button></a>
+                <a href="administrarAdministradores.html"><button class="btn camino" id="botonSolicitudes">Administradores</button></a>
+                <a href="agregarAdminsitrador.html"><button class="btn btn-primary camino localizacion" id="solicitudesCarrera">Agregar</button></a>
             </ol>
         </div>
     </div>
 
     <div class="d-flex justify-content-center">
-        <h1 class="titulo text-center">Agregar alumnos </h1>
+        <h1 class="titulo text-center">Agregar administrador</h1>
     </div>
 
     <div class="container mt-5">
@@ -55,15 +55,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mt-3">
+                <div class="col">
                     <div class="col rounded colorFondo m-2 p-4 h-70">
-                        <h3 style="color: #6366F1; padding-bottom: 2%;">Datos academicos</h3>
+                        <h3 style="color: #6366F1; padding-bottom: 2%;">Datos laborales</h3>
                         <div class="row">
                             <div class="col">
                                 <label for="carreraSelect" class="ms-1" style="color: #6366F1;">
-                                    Carrera
+                                    Area
                                 </label>
-                                <select id="carreraSelect" name="opciones" class="col-1 text-start estiloInputs" style="width: 100%;">
+                                <select id="carreraSelect" name="opciones" class="col-1 text-start estiloInputs form-select" style="width: 100%;">
                                     <option value="opcion1" class="textoInputs">Ingeniería Forestal</option>
                                     <option value="opcion2" class="textoInputs">Licenciatura en Ciencias Ambientales para el Desarrollo Comunitario</option>
                                     <option value="opcion3" class="textoInputs">Ingeniería de Desarrollo de Software y Sistemas Inteligentes</option>
@@ -73,9 +73,9 @@
                             </div>
                             <div class="col">
                                 <label for="carreraSelect" class="ms-1" style="color: #6366F1;">
-                                    Semestre
+                                    Departamento/cubo
                                 </label>
-                                <select id="carreraSelect" name="opciones" class="col-1 text-start estiloInputs" style="width: 100%;">
+                                <select id="carreraSelect" name="opciones" class="col-1 text-start estiloInputs form-select" style="width: 100%;">
                                     <option value="opcion1" class="textoInputs">Primero</option>
                                     <option value="opcion2" class="textoInputs">Segundo</option>
                                     <option value="opcion3" class="textoInputs">Tercero</option>
@@ -92,7 +92,7 @@
                         <div class="row">
                             <div class="col">
                                 <label for="grupoAlumno" class="ms-1" style="color: #6366F1;">
-                                    Grupo
+                                    Nip
                                 </label>
                                 <input id="grupoAlumno" type="number" class="ms-1 w-100 form-control">
                             </div>
