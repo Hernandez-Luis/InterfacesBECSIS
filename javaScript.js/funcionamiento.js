@@ -58,15 +58,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Funcionamiento calendario
-
-$(document).ready(function(){
-
-    $('.input-daterange').datepicker({
-        format: 'dd-mm-yyyy',
+$(document).ready(function () {
+    $('#start').datepicker({
+        format: 'dd/mm/yyyy',
+        todayHighlight: true,
         autoclose: true,
-        calendarWeeks : true,
-        clearBtn: true,
-        disableTouchKeyboard: true
+        orientation: "bottom auto"
     });
-    
+
+    $('#end').datepicker({
+        format: 'dd/mm/yyyy',
+        todayHighlight: true,
+        autoclose: true,
+        orientation: "bottom auto"
     });
+});
