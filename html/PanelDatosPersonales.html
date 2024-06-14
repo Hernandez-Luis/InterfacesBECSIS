@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav id="nav"></nav>
-    <div class="container mt-3 ">
+    <div class="container mt-3 ms-3" style="width: 90%;">
         <div class="row" >
             <ol class="p-1 colorFondo breadcrumb bread-primary ">
                 <a href="menuAlumno.html" style="text-decoration: none;">
@@ -28,9 +28,9 @@
 <section>
     <h1 class="titulo ps-5 mb-4 mt-2 fw-bold fs-1">MIS DATOS</h1>
 
-    <div class="container-auto row ">
+    <div class="container-auto row mx-auto w-100">
         <!--Informacion general-->
-        <div class="col-10 col-xs-2 col-sm-12 col-md-11 col-xl-4 rounded colorFondo m-4 p-2">
+        <div class="col-10 col-xs-2 col-sm-12 col-md-11 col-xl-4 rounded colorFondo mt-4 mb-4 ms-4 p-2">
             <h3 style="color: #6366F1;">Información general</h3>
                     <div class="col-md-12 pt-2">
                         <p class="textoInputs">Nombre Completo</p>
@@ -120,7 +120,7 @@
                 </div>
         </div>
         <!--Domicilio-->
-        <div class="col-10 col-xs-2 col-sm-12 col-md-11 col-xl-7 rounded colorFondo m-4 p-2">
+        <div class="col-10 col-xs-2 col-sm-12 col-md-11 col-xl-7 rounded colorFondo ms-4 p-2">
         <h3 style="color: #6366F1; padding-bottom: 1%;">Domicilio</h3>
         <div class="col-md-12">
                 <p class="textoInputs">Marque la opción que mejor describa tu situación de vivienda:</p>
@@ -157,7 +157,7 @@
             <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="pagoMensual">
             </div>
             <div class=" col-4 p-2">
-                <p>Nombre de la casa de huéspedes o propietario</p>
+                <p>Ingresa el nombre de la casa de huéspedes o del propietario</p>
                 <input type="text" class="form-control estiloInputs" style="width: 100%;" id="inputNombre" placeholder="">
             </div>
         </div>
@@ -211,36 +211,30 @@
                         </div>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <div style="width: 48%; padding-top: 2%;">
-                        <div class="col-12">
-                            <p class="textoInputs">Calle</p>
-                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
-                                <option value="1" class="subtitulo">Calle 1</option>
-                                <option value="2" class="subtitulo">Calle 2</option>
-                                <option value="3" class="subtitulo">Calle 3</option>
-                                <option value="3" class="subtitulo">Calle 4</option>
-                                <option value="3" class="subtitulo">Calle 5</option>
-                            </select>
-                        </div>
+                <div class="row d-flex">
+                    <div class="col-12">
+                        <p class="textoInputs">Calle</p>
+                        <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                            <option value="1" class="subtitulo">Calle 1</option>
+                            <option value="2" class="subtitulo">Calle 2</option>
+                            <option value="3" class="subtitulo">Calle 3</option>
+                            <option value="3" class="subtitulo">Calle 4</option>
+                            <option value="3" class="subtitulo">Calle 5</option>
+                        </select>
                     </div>
-                    <div style="width: 48%; padding-top: 2%;">
-                        <div class="col-12">
-                            <p class="textoInputs">Número</p>
-                            <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
-                                <option value="1" class="subtitulo">654</option>
-                                <option value="2" class="subtitulo">655</option>
-                                <option value="3" class="subtitulo">545</option>
-                                <option value="3" class="subtitulo">845</option>
-                                <option value="3" class="subtitulo">555</option>
-                            </select>
-                        </div>
+                    <div class="col-6">
+                        <p class="textoInputs">Número</p>
+                        <select class="form-select estiloInputs" style="width: 100%;" aria-label="Default select example">
+                            <option value="1" class="subtitulo">654</option>
+                            <option value="2" class="subtitulo">655</option>
+                            <option value="3" class="subtitulo">545</option>
+                            <option value="3" class="subtitulo">845</option>
+                            <option value="3" class="subtitulo">555</option>
+                        </select>
                     </div>
-                    <div style="width: 48%; padding-top: 2%;">
-                        <div class="col-12">
-                            <p class="textoInputs">C.P.</p>
-                                <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="pagoMensual">
-                        </div>
+                    <div class="col-6">
+                        <p class="textoInputs">C.P.</p>
+                            <input type="text" class="form-control estiloInputs" class="estiloInputs rounded" style="width: 100%;" id="pagoMensual">
                     </div>
                 </div>       
             </div> 
@@ -249,9 +243,9 @@
 </section>
 
 <section>
-    <div class="container-auto row">
+    <div class="container row w-100">
         <!-- TRANSPORTE -->
-        <div class="col-10 col-xs-4 col-sm-6 col-md-6 col-xl-6 rounded colorFondo m-4 p-2">
+        <div class="col-10 col-xs-4 col-sm-6 col-md-6 col-xl-6 rounded colorFondo ms-4 mt-4" style="width: 89%;">
             <h3 style="color: #6366F1;">Transporte</h3>
             <div class="col-md-12 pt-3">
                 <p class="textoInputs">¿Llevas automóvil o motocicleta cotidianamente a la universidad?</p>
