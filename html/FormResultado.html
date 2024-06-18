@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información Socioeconómica</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <style>
+        .containerForm {
+            max-width: 1000px;
+            margin: auto;
+        }
+        .form-section {
+            margin-bottom: 30px;
+        }
+        .form-section h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navRevisor"></nav>
+    <div class="containerForm">
+        <h2 class="text-center mb-4">INFORMACIÓN SOCIOECONÓMICA</h2>
+        <!-- INFORMACION DEL ALUMNO-->
+        <form>
+            <h3 class="titulo ps-4 mb-2 mt-2" style="font-size: 180%;">Datos Personales</h3>
+            <div class="form-section rounded colorFondo p-4 col-xl-12 col-md-11">
+                <div class="row">
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="nombreAlumno" class="textoInputs" style="font-weight: bold;">Nombre del Alumno:</label>
+                        <span><p>Efren David Jimenez Martinez</p></span> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="carrera" class="textoInputs" style="font-weight: bold;">Carrera:</label>
+                        <span><p>Licenciatura en Informática</p></span> </label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="semestre" class="textoInputs" style="font-weight: bold;">Semestre:</label>
+                        <span><p>Sexto semestre</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label class="textoInputs" style="font-weight: bold;">Depende Económicamente:</label><br>
+                        <span><p>Si</p></span></label>
+                    </div>
+                </div>
+                <h2 class="titulo" style="font-size: 180%;"></h2>
+        <!--DOMICILIO DEL ALUMNO -->
+            <div class="row">
+                    <label for="domicilio" class="textoInputs subtitulo" style="font-style: oblique; color: #6366F1;">
+                        Domicilio Actual del Alumno
+                    </label>
+                    
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Estado</p>
+                        <span><p>Oaxaca</p></span></label>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Municipio</p>
+                        <span><p>Tamazulapam Mixe</p></span></label>                                
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Colonia</p>
+                        <span><p>Centro</p></span></label> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Calle</p>
+                        <span><p>San Francisco</p></span></label> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Numero</p>
+                        <span><p>42342</p></span></label> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Códico postal</p>
+                        <span><p>42342</p></span></label> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label class="textoInputs" class="textoInputs" style="font-weight: bold;">Solicita Beca Alimenticia:</label><br>
+                        <span><p>No</p></span></label> 
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3" >
+                        <label for="gastosMensuales" class="textoInputs" style="font-weight: bold;">¿A cuánto ascienden sus gastos mensuales totales de manutención?</label>
+                        <span><p>$ 2000</p></span></label>
+                    </div>
+                </div>
+                <h2></h2>
+                <!--DATOS ECONOMICOS DEL ALUMNO -->
+                <div class="row d-flex flex-wrap">
+                    <div class="col-1-7 col-md-6 col-lg-3" >
+                        <label class="textoInputs" style="font-weight: bold;">Seleccione la opción que mejor describe su situación de vivienda:</label><br>
+                        <span><p>Renta cuarto</p></span></label>
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <p class="textoInputs" style="font-weight: bold;">¿Con cuántas personas comparte el costo de la renta?</p>
+                        <span><p> 0 </p></span></label>
+                    </div>
+
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <p class="textoInputs" style="font-weight: bold;">¿Cuánto paga usted de renta mensualmente?</p>
+                        <span><p>$ 1200</p></span></label>                                
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" class="textoInputs" style="font-weight: bold;">¿Es hijo o nieto de comunero de Ixtlán de Juárez?</label><br>
+                        <span><p>No</p></span></label> 
+                    </div>
+                </div>
+                <h2></h2>
+                <div class="row d-flex flex-wrap">
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Lleva usted automóvil cotidianamente a la universidad:</label><br>
+                        <span><p>Si</p></span></label> 
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Marca</label><br>
+                        <span><p>Subaru</p></span></label> 
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Modelo</label><br>
+                        <span><p>WRX STI</p></span></label> 
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Año</label><br>
+                        <span><p>2017</p></span></label> 
+                    </div>
+
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Lleva usted motocicleta cotidianamente a la universidad:</label><br>
+                        <span><p>No</p></span></label> 
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Marca</label><br>
+                        <span><p> </p></span></label> 
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Modelo</label><br>
+                        <span><p> </p></span></label> 
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Año</label><br>
+                        <span><p> </p></span></label> 
+                    </div>
+
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Utiliza usted teléfono celular en la universidad:</label><br>
+                        <span><p>Si</p></span></label> 
+                    </div>
+
+                    <div class="col-1-7 col-md-6 col-lg-3">
+                        <label class="textoInputs" style="font-weight: bold;">Tiene usted computadora personal y/o portátil:</label><br>
+                        <span><p>Si</p></span></label> 
+                    </div>
+                </div>
+            </div>
+            <!-- DATOS DEL PADRE O TUTOR -->
+            <h2 class="titulo ps-4 mb-2 mt-2" style="font-size: 150%;" >Datos del Padre, Madre, Tutor o Familiar más Cercano</h2>
+            <div class="form-section rounded colorFondo p-4 col-xl-12 col-md-11">
+                <div class="row">
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="nombreFamiliar" class="textoInputs" style="font-weight: bold;">Nombre del tutor:</label>
+                        <span><p>Luis Alberto Hernandez </p></span> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="parentesco" class="textoInputs" style="font-weight: bold;">Parentesco:</label>
+                        <span><p>Padre</p></span> </label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="telefono" class="textoInputs" style="font-weight: bold;">Telefono </label>
+                        <span><p> 951 5543 413</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label class="textoInputs" style="font-weight: bold;">Es trabajador de la UNSIJ o SUNEO:</label><br>
+                        <span><p>No</p></span></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="domicilio" class="textoInputs subtitulo" style="font-style: oblique; color: #6366F1;">
+                        Domicilio del tutor
+                    </label>
+                    
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Estado</p>
+                        <span><p>Oaxaca</p></span></label>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Municipio</p>
+                        <span><p>Tamazulapam Mixe</p></span></label>                                
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Colonia</p>
+                        <span><p>Centro</p></span></label> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Calle</p>
+                        <span><p>San Francisco</p></span></label> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Numero</p>
+                        <span><p>42342</p></span></label> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <p class="textoInputs" style="font-weight: bold;">Códico postal</p>
+                        <span><p>42342</p></span></label> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label class="textoInputs" class="textoInputs" style="font-weight: bold;">Solicita Beca Alimenticia:</label><br>
+                        <span><p>No</p></span></label> 
+                    </div>
+                    <div class="col-1-7 col-md-6 col-lg-3" >
+                        <label for="gastosMensuales" class="textoInputs" style="font-weight: bold;">¿A cuánto ascienden sus gastos mensuales totales de manutención?</label>
+                        <span><p>$ 2000</p></span></label>
+                    </div>
+                </div>
+               
+            </div>
+            <!-- REPORTES DE INGREO MENSUAL-->
+            <h2 class="titulo ps-4 mb-2 mt-2" style="font-size: 150%;" style="font-weight: bold;">Reporte de ingresos mensuales </h2>
+            <div class="form-section rounded colorFondo p-4 col-xl-12 col-md-11">
+                <div class="row">
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="nombreIngresos" class="textoInputs" style="font-weight: bold;">Nombre</label>
+                        <span><p>Luis Alberto Hernandez</p></span> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="nombreIngresos" class="textoInputs" style="font-weight: bold;">Parentesco o Relación con el Alumno:</label>
+                        <span><p>Padre</p></span> </label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="empresa" class="textoInputs" style="font-weight: bold;">Empresa donde Labora:</label>
+                        <span><p>Oxxo</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label for="LugarEmpresa" class="textoInputs" style="font-weight: bold;">Lugar donde Labora:</label>
+                        <span><p>Oaxaca</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label for="puesto" class="textoInputs" style="font-weight: bold;">Puesto o Tipo de Trabajo:</label>
+                        <span><p>Cajero</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label for="ingresoBruto" class="textoInputs" style="font-weight: bold;">Ingreso Mensual Bruto:</label>
+                        <span><p> $1000</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label for="ingresoNeto" class="textoInputs" style="font-weight: bold;">Ingreso Mensual Neto:</label>
+                        <span><p>$ 1500</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label for="ingresoTotal" class="textoInputs" style="font-weight: bold;">Ingreso Total:</label>
+                        <span><p>2500</p></span></label>
+                    </div>
+                </div>
+            </div>
+            <!-- RECIBO DE LUZ-->
+            <h2 class="titulo ps-4 mb-2 mt-2" style="font-size: 150%;" style="font-weight: bold;">Datos del Recibo de Electricidad</h2>
+            <div class="form-section rounded colorFondo p-4 col-xl-12 col-md-11">
+                <div class="row">
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="nombreTitularRecibo" class="textoInputs" style="font-weight: bold;">Nombre del Titular de los Recibos de Electricidad:</label>
+                        <span><p>Luis Alberto Hernandez</p></span> 
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="domicilioRecibo" class="textoInputs" style="font-weight: bold;">Domicilio del Recibo:</label>
+                        <span><p>Tamazulapam</p></span> </label>
+                    </div>
+                    <label for="domicilio" class="textoInputs subtitulo" style="font-style: oblique; color: #6366F1;">
+                        Periodo Reportado
+                    </label>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                        <label for="periodoReportado" class="textoInputs" style="font-weight: bold;">Fecha inicio</label>
+                        <span><p>25 / 05 / 2024</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label for="periodoReportado" class="textoInputs" style="font-weight: bold;">Fecha fin</label>
+                        <span><p>18 / 07 / 2024</p></span></label>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-12" >
+                        <label for="domicilioRecibo" class="textoInputs" style="font-weight: bold;" >Pago mensual promedio</label>
+                        <span><p>$ 825.50</p></span></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HERMANOS DEPENDIENTES-->
+            <h2 class="titulo ps-4 mb-2 mt-2" style="font-size: 150%;" >Datos de hermanos dependientes económicos </h2>
+            <div class="form-section rounded colorFondo p-4 col-xl-12 col-md-11">
+                <div class="row">
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-12">
+                        <label for="nombreHermano" class="textoInputs" style="font-weight: bold;">Nombre:</label>
+                        <span><p>Luis David Peréz</p></span> 
+                    </div>
+                    <div class="col-xl-1 col-md-3 col-sm-6 col-12">
+                        <label for="edadHermano" class="textoInputs" style="font-weight: bold;">Edad:</label>
+                        <span><p>15</p></span> </label>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-12">
+                        <label for="gradoHermano" class="textoInputs" style="font-weight: bold;">Grado que Estudia:</label>
+                        <span><p>Tercero Secundaria </p></span></label>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-12" >
+                        <label for="gradoHermano" class="textoInputs" style="font-weight: bold;">Institución:</label>
+                        <span><p>Cecyte 51</p></span></label>
+                    </div>
+                    <div class="col-xl-4 col-md-3 col-sm-6 col-12" >
+                        <label for="comprobanteEstudios" class="textoInputs" style="font-weight: bold;">Tipo de Comprobante de Estudios:</label>
+                        <span><p> Acta nacimiento</p></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section p-2">
+                <h2 class="titulo ps-4 mb-2 mt-2" style="font-size: 150%;">Observaciones</h2>
+                <div class="form-group">
+                    <label for="observaciones" class="textoInputs" style="color: #6366F1; font-style: oblique;">Observaciones:</label>
+                    <span><p>No se adjunto recibo de agua ya que no se paga el agua 
+                        Se entrego unicamente unicamente un acta de nacimineento coo comprobante del hermano ya que sus documentos se encuentran en la institucion donde estudia 
+                    </p></span></label> 
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+
+    <footer id="footer"></footer>
+    <script src="/javaScript.js/funcionamiento.js"></script>
+</body>
+
+</html>

@@ -347,3 +347,10 @@ footer hr {
     height: auto;
 }
 /*--------------- Tabla Administrar Alumnos  ---------------*/
+
+/* CALENDARIO */
+
+.datepicker {
+    z-index: 1600 !important; /* Asegúrate de que el datepicker esté encima de todo */
+}
+/* FIN CALENDARIO */
